@@ -4,30 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#FDFEFF"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="279dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Playing And Learning"
-        android:textAllCaps="true"
-        android:textColor="#3C2340"
-        android:textSize="24sp"
-        android:textStyle="bold|italic" />
-
     <ImageView
-        android:layout_width="267dp"
-        android:layout_height="199dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:background="#FFFFFF"
-        android:scaleType="center"
-        android:src="@drawable/userlogin" />
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="317dp"
+        app:srcCompat="@drawable/playing4" />
 
     <EditText
         android:layout_width="match_parent"
@@ -48,8 +33,8 @@
 
     <Button
         android:id="@+id/BModulos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:layout_height="30dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="#9C27B0"
