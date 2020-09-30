@@ -36,10 +36,17 @@
         android:padding="10dp"
         android:text="Ingrese su nombre de usuario y le enviaremos un correo para que pueda recuperar su contraseña"
         android:textColor="#FFFFFF"
+<<<<<<< Updated upstream
         android:textSize="20sp"
         android:textStyle="italic" />
+=======
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        />
+>>>>>>> Stashed changes
 
     <EditText
+        android:id="@+id/tvRecuperarClave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
@@ -48,10 +55,15 @@
         android:inputType="text" />
 
     <Button
+        android:id="@+id/bRecuperar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="15dp"
+<<<<<<< Updated upstream
         android:background="#9C27B0"
         android:text="Enviar" />
+=======
+        android:text="Recuperar" />
+>>>>>>> Stashed changes
 </LinearLayout>
