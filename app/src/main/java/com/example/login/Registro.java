@@ -2,7 +2,6 @@ package com.example.login;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +35,7 @@ public class Registro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_registro);
         setContentView(R.layout.activity_registro);
         etNombre = (EditText) findViewById(R.id.etNombre);
         etApellido = (EditText) findViewById(R.id.etApellido);
