@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "598271965747",
+    "firebase_url": "https://playingandlearning-bc8f6.firebaseio.com",
+    "project_id": "playingandlearning-bc8f6",
+    "storage_bucket": "playingandlearning-bc8f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598271965747:android:7185984b215b4765354146",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598271965747-ef208terfqr21c79tjf8gp3q5skhqacc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.login",
+            "certificate_hash": "6962771650f5091a5a52d664933bf7864a0ebd25"
+          }
+        },
+        {
+          "client_id": "598271965747-k1qrjgnangdc8k7pmdhlejv7srp6lad9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-h_FQZnrZYG0zUkLeTrTsPcvcSv-7fb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598271965747-k1qrjgnangdc8k7pmdhlejv7srp6lad9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
