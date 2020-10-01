@@ -36,7 +36,6 @@ public class Registro extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-        setContentView(R.layout.activity_registro);
         etNombre = (EditText) findViewById(R.id.etNombre);
         etApellido = (EditText) findViewById(R.id.etApellido);
         etEdad = (EditText) findViewById(R.id.etEdad);

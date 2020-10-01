@@ -15,14 +15,16 @@
         app:srcCompat="@drawable/playing4" />
 
     <EditText
+        android:id="@+id/etCorreo"
         android:layout_width="match_parent"
         android:layout_height="71dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:hint="Usuario"
+        android:hint="Correo"
         android:inputType="text" />
 
     <EditText
+        android:id="@+id/etClave"
         android:layout_width="match_parent"
         android:layout_height="67dp"
         android:layout_marginLeft="30dp"
@@ -32,7 +34,7 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/BModulos"
+        android:id="@+id/btnIniciar"
         android:layout_width="125dp"
         android:layout_height="30dp"
         android:layout_gravity="center"

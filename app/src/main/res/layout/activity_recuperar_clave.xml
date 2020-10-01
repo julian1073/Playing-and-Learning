@@ -36,7 +36,7 @@
         android:padding="10dp"
         android:text="Ingrese su nombre de usuario y le enviaremos un correo para que pueda recuperar su contraseña"
         android:textColor="#FFFFFF"
-<<<<<<< Updated upstream
+
         android:textSize="20sp"
         android:textStyle="italic" />
 =======
@@ -60,7 +60,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="15dp"
-<<<<<<< Updated upstream
         android:background="#9C27B0"
         android:text="Enviar" />
 =======
