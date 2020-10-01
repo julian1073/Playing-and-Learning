@@ -9,36 +9,44 @@
     android:background="@drawable/fondo1"
     android:clickable="true">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="229dp"
-        android:layout_height="160dp"
+    <ImageButton
+        android:id="@+id/mMaya"
+        android:layout_width="331dp"
+        android:layout_height="206dp"
+        android:background="#009C27B0"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085"
+        app:layout_constraintVertical_bias="0.074"
         app:srcCompat="@drawable/maya3" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="301dp"
-        android:layout_height="215dp"
+    <ImageButton
+        android:id="@+id/mBolt"
+        android:layout_width="334dp"
+        android:layout_height="224dp"
+        android:background="#0033053A"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.968"
-        app:srcCompat="@drawable/superbolt" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="252dp"
-        android:layout_height="189dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
         app:srcCompat="@drawable/bolt2" />
+
+    <ImageButton
+        android:id="@+id/mSuperBolt"
+        android:layout_width="348dp"
+        android:layout_height="197dp"
+        android:background="#00473939"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919"
+        app:srcCompat="@drawable/superbolt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

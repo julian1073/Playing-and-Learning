@@ -3,8 +3,6 @@ package com.example.login;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.PendingIntent;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -113,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
+   /* @Override
     protected void onStart() {
 
         super.onStart();
@@ -121,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, Modulos.class));
             finish();
         }
-    }
+    }*/
 
     public void getUserInfo(){
 
