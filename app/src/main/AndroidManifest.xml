@@ -15,6 +15,11 @@
         <activity android:name=".RecuperarClave"></activity>
         <activity android:name=".Modulos"></activity>
         <activity android:name=".ModuloMaya"></activity>
+
+        <activity android:name=".ModuloMayaVocales"></activity>
+        <activity android:name=".ModuloMayaNumeros"></activity>
+        <activity android:name=".ModuloMayaColores"></activity>
+        <activity android:name=".ModuloMayaAnimales"></activity>
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity">
             <intent-filter>
