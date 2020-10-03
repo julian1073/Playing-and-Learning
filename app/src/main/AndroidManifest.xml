@@ -17,6 +17,10 @@
         <activity android:name=".ModuloMaya"></activity>
 
         <activity android:name=".ModuloMayaVocales"></activity>
+        <activity android:name=".ModuloMayaVocalesInicio"></activity>
+        <activity android:name=".ModuloMayaVocalesNext"></activity>
+        <activity android:name=".ModuloMayaVocalesContinuar"></activity>
+        <activity android:name=".ModuloMayaVocalesContinuarDos"></activity>
         <activity android:name=".ModuloMayaNumeros"></activity>
         <activity android:name=".ModuloMayaColores"></activity>
         <activity android:name=".ModuloMayaAnimales"></activity>

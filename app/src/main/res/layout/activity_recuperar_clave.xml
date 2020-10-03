@@ -40,10 +40,6 @@
         android:textSize="20sp"
         android:textStyle="italic" />
 
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="15dp"
-        />
-    Stashed changes
 
     <EditText
         android:id="@+id/tvRecuperarClave"
@@ -63,6 +59,4 @@
         android:background="#9C27B0"
         android:text="Enviar" />
 
-        android:text="Recuperar" />
-        Stashed changes
 </LinearLayout>

@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        getUserInfo();
+       // getUserInfo();
     }
 
     public String validacion(){
@@ -111,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-   /* @Override
+
+   @Override
     protected void onStart() {
 
         super.onStart();
@@ -119,9 +120,20 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, Modulos.class));
             finish();
         }
-    }*/
+    }
 
-    public void getUserInfo(){
+    //@Override
+    //protected void onStart() {
+
+       // super.onStart();
+       // if (mAuth.getCurrentUser() != null){
+       //     startActivity(new Intent(MainActivity.this, Modulos.class));
+         //   finish();
+        //}
+   // }
+
+
+    /*public void getUserInfo(){
 
         String id = mAuth.getCurrentUser().getUid();
         mDatabase.child("usuario").child(id).addValueEventListener(new ValueEventListener() {
@@ -143,5 +155,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-    }
+    }*/
 }
