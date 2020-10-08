@@ -22,6 +22,11 @@
         <activity android:name=".ModuloMayaVocalesContinuar"></activity>
         <activity android:name=".ModuloMayaVocalesContinuarDos"></activity>
         <activity android:name=".ModuloMayaNumeros"></activity>
+        <activity android:name=".ModuloMayaNumerosUno"></activity>
+        <activity android:name=".ModuloMayaNumerosDos"></activity>
+        <activity android:name=".ModuloMayaNumerosTres"></activity>
+        <activity android:name=".ModuloMayaNumerosCuatro"></activity>
+        <activity android:name=".ModuloMayaNumerosCinco"></activity>
         <activity android:name=".ModuloMayaColores"></activity>
         <activity android:name=".ModuloMayaAnimales"></activity>
         <activity android:name=".Registro" />
