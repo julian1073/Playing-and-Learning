@@ -28,6 +28,12 @@
         <activity android:name=".ModuloMayaNumerosCuatro"></activity>
         <activity android:name=".ModuloMayaNumerosCinco"></activity>
         <activity android:name=".ModuloMayaColores"></activity>
+        <activity android:name=".ModuloMayaColorAmarillo"></activity>
+        <activity android:name=".ModuloMayaColorAmarilloVideo"></activity>
+        <activity android:name=".ModuloMayaColorAzul"></activity>
+        <activity android:name=".ModuloMayaColorAzulVideo"></activity>
+        <activity android:name=".ModuloMayaColorRojo"></activity>
+        <activity android:name=".ModuloMayaColorRojoVideo"></activity>
         <activity android:name=".ModuloMayaAnimales"></activity>
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity">
@@ -37,6 +43,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
