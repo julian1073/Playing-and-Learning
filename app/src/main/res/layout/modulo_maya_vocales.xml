@@ -7,7 +7,7 @@
     android:background="@drawable/fondo2">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ColoresImagen"
         android:layout_width="381dp"
         android:layout_height="134dp"
         android:layout_marginStart="40dp"
@@ -35,13 +35,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/ColoresImagen"
         app:layout_constraintVertical_bias="0.12" />
 
     <ImageButton
-        android:id="@+id/siguiente"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/azul"
+        android:layout_width="72dp"
+        android:layout_height="28dp"
+        android:background="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
