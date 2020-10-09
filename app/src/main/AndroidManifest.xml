@@ -36,6 +36,12 @@
         <activity android:name=".ModuloMayaColorRojo"></activity>
         <activity android:name=".ModuloMayaColorRojoVideo"></activity>
         <activity android:name=".ModuloMayaAnimales"></activity>
+        <activity android:name=".ModuloBoltCuentosInicio"></activity>
+        <activity android:name=".ModuloBoltCuentosUno"></activity>
+        <activity android:name=".ModuloBoltCuentosDos"></activity>
+        <activity android:name=".ModuloBoltCuentosTres"></activity>
+        <activity android:name=".ModuloBoltCuentosCuatro"></activity>
+        <activity android:name=".ModuloBoltCuentosQuinto"></activity>
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity">
             <intent-filter>
