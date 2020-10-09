@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.679"
-        app:srcCompat="@drawable/colores" />
+        app:srcCompat="@drawable/coloresimage" />
 
     <ImageButton
         android:id="@+id/animales"
