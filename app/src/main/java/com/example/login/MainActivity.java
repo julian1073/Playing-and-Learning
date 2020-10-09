@@ -1,9 +1,11 @@
 package com.example.login;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +23,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -83,8 +87,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-       // getUserInfo();
     }
 
     public String validacion(){
@@ -111,49 +113,46 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
-   @Override
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+    @Override
     protected void onStart() {
 
         super.onStart();
         if (mAuth.getCurrentUser() != null){
+            getUserInfo();
             startActivity(new Intent(MainActivity.this, Modulos.class));
             finish();
         }
     }
 
-    //@Override
-    //protected void onStart() {
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+    public void getUserInfo(){
 
-       // super.onStart();
-       // if (mAuth.getCurrentUser() != null){
-       //     startActivity(new Intent(MainActivity.this, Modulos.class));
-         //   finish();
-        //}
-   // }
+        try {
+            String id = Objects.requireNonNull(mAuth.getCurrentUser().getUid());
 
+            mDatabase.child("usuario").child(id).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    if (snapshot.exists()){
 
-    /*public void getUserInfo(){
-
-        String id = mAuth.getCurrentUser().getUid();
-        mDatabase.child("usuario").child(id).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.exists()){
-
-                    usuario.setNombre(snapshot.child("nombre").getValue().toString());
-                    usuario.setApellido(snapshot.child("apellido").getValue().toString());
-                    usuario.setEdad(Integer.parseInt(snapshot.child("edad").getValue().toString()));
-                    usuario.setCorreo(snapshot.child("correo").getValue().toString());
-                    usuario.setId(snapshot.child("id").getValue().toString());
-                    usuario.setClave(snapshot.child("clave").getValue().toString());
+                        usuario.setNombre(snapshot.child("nombre").getValue().toString());
+                        usuario.setApellido(snapshot.child("apellido").getValue().toString());
+                        usuario.setEdad(Integer.parseInt(snapshot.child("edad").getValue().toString()));
+                        usuario.setCorreo(snapshot.child("correo").getValue().toString());
+                        usuario.setId(snapshot.child("id").getValue().toString());
+                        usuario.setClave(snapshot.child("clave").getValue().toString());
+                    }
                 }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
 
-            }
-        });
-    }*/
+                }
+            });
+        }
+        catch (Exception ex) {
+            throw ex;
+        }
+    }
 }
