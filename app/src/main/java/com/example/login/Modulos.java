@@ -16,12 +16,24 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Modulos extends AppCompatActivity{
 
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
-
+    private ImageButton mMaya;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modulos);
+
+        mMaya = (ImageButton) findViewById(R.id.mMaya);
+
+
+        mMaya.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Para que un activity llame a otro
+                Intent intentReg = new Intent(Modulos.this, ModuloMaya.class);
+                Modulos.this.startActivity(intentReg);
+            }
+        });
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
@@ -43,7 +55,7 @@ public class Modulos extends AppCompatActivity{
         } else if (id == R.id.itModuloSuperBolt) {
 
             return true;
-        } else if (id == R.id.itInicio){
+        } else if (id == R.id.itInicio) {
 
             startActivity(new Intent(Modulos.this, Modulos.class));
 
@@ -58,26 +70,6 @@ public class Modulos extends AppCompatActivity{
         } else if (id == R.id.itMiCuenta) {
 
             return true;
-
-    private ImageButton mMaya;
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.modulos);
-
-
-            mMaya = (ImageButton) findViewById(R.id.mMaya);
-
-
-            mMaya.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    //Para que un activity llame a otro
-                    Intent intentReg = new Intent(Modulos.this, ModuloMaya.class);
-                    Modulos.this.startActivity(intentReg);
-                }
-            });
         }
 
         return super.onOptionsItemSelected(item);
