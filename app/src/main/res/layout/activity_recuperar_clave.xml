@@ -39,9 +39,6 @@
 
         android:textSize="20sp"
         android:textStyle="italic" />
-
-
-
     <EditText
         android:id="@+id/tvRecuperarClave"
         android:layout_width="match_parent"
@@ -58,6 +55,6 @@
         android:layout_gravity="center"
         android:layout_margin="15dp"
         android:background="#9C27B0"
-        android:text="Enviar" />
-
+        android:text="Enviar"
+        />
 </LinearLayout>

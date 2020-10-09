@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        app:showAsAction="always"
+        android:id="@+id/itInicio"
+        android:icon="@drawable/inicio"
+        android:title="Inicio"
+        android:titleCondensed="Inicio"
+        />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/itModuloMaya"
+        android:icon="@drawable/modulomaya"
+        android:title="Modulo Maya"
+        android:titleCondensed="Modulo Maya"
+        />
+    <item
+        app:showAsAction="always"
+        android:title="Modulo Bolt"
+        android:id="@+id/itModuloBolt"
+        android:icon="@drawable/modulobolt"
+        />
+    <item
+        app:showAsAction="always"
+        android:title="Modulo Superbolt"
+        android:id="@+id/itModuloSuperBolt"
+        android:icon="@drawable/modulosuper"
+        />
+    <item
+        android:title="Mi cuenta"
+        android:id="@+id/itMiCuenta"
+        />
+    <item
+        android:title="Cerrar Sesión"
+        android:id="@+id/itCerrarSesion"
+        />
+</menu>

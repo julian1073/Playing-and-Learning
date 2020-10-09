@@ -7,7 +7,8 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ModuloMayaVocales extends AppCompatActivity {
+public class
+ModuloMayaVocales extends AppCompatActivity {
 
     ImageButton siguiente;
 
