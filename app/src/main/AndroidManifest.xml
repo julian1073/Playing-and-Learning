@@ -24,6 +24,7 @@
         <activity android:name=".ModuloMayaNumeros"></activity>
         <activity android:name=".ModuloMayaColores"></activity>
         <activity android:name=".ModuloMayaAnimales"></activity>
+        <activity android:name=".ModuloMayaAnimalesUno"></activity>
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity">
             <intent-filter>
