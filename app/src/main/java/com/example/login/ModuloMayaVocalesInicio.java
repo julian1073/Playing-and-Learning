@@ -38,6 +38,7 @@ public class ModuloMayaVocalesInicio extends AppCompatActivity {
              }
         });
 
+
         botonE = (ImageButton)findViewById(R.id.audioE);
         vocalE = MediaPlayer.create(this, R.raw.e);
 

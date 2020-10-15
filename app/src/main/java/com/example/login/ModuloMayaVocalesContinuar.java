@@ -14,6 +14,8 @@ public class ModuloMayaVocalesContinuar extends AppCompatActivity {
     MediaPlayer oso;
     ImageButton botonIguana;
     ImageButton botonOso;
+    ImageButton botonPauseIguana;
+    ImageButton botonPauseOso;
     ImageButton siguienteTres;
 
     @Override
@@ -22,6 +24,7 @@ public class ModuloMayaVocalesContinuar extends AppCompatActivity {
         setContentView(R.layout.modulo_maya_vocales_continuar);
 
         botonIguana = (ImageButton)findViewById(R.id.botonIguana);
+        botonPauseIguana = (ImageButton)findViewById(R.id.botonPauseIguana);
         iguana = MediaPlayer.create(this, R.raw.iguana);
 
         botonIguana.setOnClickListener(new View.OnClickListener() {
@@ -31,13 +34,28 @@ public class ModuloMayaVocalesContinuar extends AppCompatActivity {
             }
         });
 
+        botonPauseIguana.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iguana.pause();
+            }
+        });
+
         botonOso = (ImageButton)findViewById(R.id.botonOso);
+        botonPauseOso = (ImageButton)findViewById(R.id.botonPauseOso);
         oso = MediaPlayer.create(this, R.raw.oso);
 
         botonOso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 oso.start();
+            }
+        });
+
+        botonPauseOso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                oso.pause();
             }
         });
 

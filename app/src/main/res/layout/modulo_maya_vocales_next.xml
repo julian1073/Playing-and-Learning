@@ -7,6 +7,19 @@
     android:background="@drawable/fondo7">
 
     <ImageButton
+        android:id="@+id/botonPauseElefante"
+        android:layout_width="67dp"
+        android:layout_height="37dp"
+        android:background="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897"
+        app:srcCompat="@android:drawable/ic_media_pause" />
+
+    <ImageButton
         android:id="@+id/siguiente2"
         android:layout_width="66dp"
         android:layout_height="38dp"
@@ -38,11 +51,24 @@
         android:background="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.448"
+        app:layout_constraintVertical_bias="0.432"
         app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+    <ImageButton
+        android:id="@+id/botonPauseArania"
+        android:layout_width="67dp"
+        android:layout_height="37dp"
+        android:background="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432"
+        app:srcCompat="@android:drawable/ic_media_pause" />
 
     <ImageButton
         android:id="@+id/botonElefante"
@@ -51,10 +77,10 @@
         android:background="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.337"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904"
+        app:layout_constraintVertical_bias="0.892"
         app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
     <ImageView

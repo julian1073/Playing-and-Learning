@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ModuloMayaVocalesContinuarDos extends AppCompatActivity {
     MediaPlayer uvas;
     ImageButton botonUva;
+    ImageButton botonPauseUva;
     VideoView videoVocales;
 
     @Override
@@ -21,6 +22,7 @@ public class ModuloMayaVocalesContinuarDos extends AppCompatActivity {
         setContentView(R.layout.modulo_maya_vocales_continuar_dos);
 
         botonUva = (ImageButton)findViewById(R.id.botonUva);
+        botonPauseUva = (ImageButton)findViewById(R.id.botonPauseUva);
         uvas = MediaPlayer.create(this, R.raw.uva);
         videoVocales = findViewById(R.id.videoVocales);
 
@@ -28,6 +30,13 @@ public class ModuloMayaVocalesContinuarDos extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 uvas.start();
+            }
+        });
+
+        botonPauseUva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                uvas.pause();
             }
         });
 
