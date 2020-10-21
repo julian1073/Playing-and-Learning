@@ -16,6 +16,8 @@
         <activity android:name=".Modulos"></activity>
         <activity android:name=".ModuloMaya"></activity>
         <activity android:name=".ModuloBolt"></activity>
+        <activity android:name=".ModuloSuperBolt"></activity>
+
 
         <activity android:name=".ModuloMayaVocales"></activity>
         <activity android:name=".ModuloMayaVocalesInicio"></activity>

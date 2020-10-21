@@ -67,6 +67,7 @@ public class ModuloBoltCuentosTres extends AppCompatActivity {
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
+            startActivity(new Intent(ModuloBoltCuentosTres.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {

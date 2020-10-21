@@ -69,6 +69,7 @@ public class ModuloMayaNumerosCuatro extends AppCompatActivity {
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
+            startActivity(new Intent(ModuloMayaNumerosCuatro.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {

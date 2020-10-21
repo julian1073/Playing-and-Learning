@@ -99,6 +99,7 @@ public class ModuloMayaVocalesNext extends AppCompatActivity {
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
+            startActivity(new Intent(ModuloMayaVocalesNext.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {

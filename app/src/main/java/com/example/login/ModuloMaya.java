@@ -83,6 +83,7 @@ public class ModuloMaya extends AppCompatActivity{
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
+            startActivity(new Intent(ModuloMaya.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {

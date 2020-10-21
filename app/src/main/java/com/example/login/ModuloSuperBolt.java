@@ -11,28 +11,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class
-ModuloMayaVocales extends AppCompatActivity {
+public class ModuloSuperBolt extends AppCompatActivity {
 
-    ImageButton siguiente;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.modulo_maya_vocales);
-
-        siguiente = (ImageButton) findViewById(R.id.azul);
-
-        siguiente.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloMayaVocales.this, ModuloMayaVocalesInicio.class);
-                ModuloMayaVocales.this.startActivity(intentRec);
-            }
-        });
-
+        setContentView(R.layout.modulo_super_bolt);
     }
+
 
     public boolean onCreateOptionsMenu(Menu menu){
 
@@ -46,28 +34,28 @@ ModuloMayaVocales extends AppCompatActivity {
 
         if (id == R.id.itModuloMaya) {
 
-            startActivity(new Intent(ModuloMayaVocales.this, ModuloMaya.class));
+            startActivity(new Intent(ModuloSuperBolt.this, ModuloMaya.class));
 
             return true;
         } else if (id == R.id.itModuloBolt) {
 
-            startActivity(new Intent(ModuloMayaVocales.this, ModuloBolt.class));
+            startActivity(new Intent(ModuloSuperBolt.this, ModuloBolt.class));
 
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
-            startActivity(new Intent(ModuloMayaVocales.this, ModuloSuperBolt.class));
+            startActivity(new Intent(ModuloSuperBolt.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {
 
-            startActivity(new Intent(ModuloMayaVocales.this, Modulos.class));
+            startActivity(new Intent(ModuloSuperBolt.this, Modulos.class));
 
             return true;
         } else if (id == R.id.itCerrarSesion) {
 
             mAuth.signOut();
-            startActivity(new Intent(ModuloMayaVocales.this, MainActivity.class));
+            startActivity(new Intent(ModuloSuperBolt.this, MainActivity.class));
             finish();
 
             return true;
@@ -79,3 +67,5 @@ ModuloMayaVocales extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
+

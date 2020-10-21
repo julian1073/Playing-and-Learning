@@ -65,6 +65,7 @@ public class ModuloMayaColorAzul extends AppCompatActivity {
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
+            startActivity(new Intent(ModuloMayaColorAzul.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {

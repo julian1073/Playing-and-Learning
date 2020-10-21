@@ -98,6 +98,7 @@ public class ModuloMayaVocalesContinuar extends AppCompatActivity {
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
+            startActivity(new Intent(ModuloMayaVocalesContinuar.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {

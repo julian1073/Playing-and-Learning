@@ -69,6 +69,7 @@ public class ModuloMayaNumerosUno extends AppCompatActivity {
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
+            startActivity(new Intent(ModuloMayaNumerosUno.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {

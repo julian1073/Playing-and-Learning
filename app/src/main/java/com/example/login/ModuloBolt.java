@@ -53,6 +53,7 @@ public class ModuloBolt extends AppCompatActivity {
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
+            startActivity(new Intent(ModuloBolt.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {

@@ -92,6 +92,7 @@ public class ModuloMayaAnimalesDos extends AppCompatActivity {
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
+            startActivity(new Intent(ModuloMayaAnimalesDos.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {

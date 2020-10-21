@@ -69,6 +69,7 @@ public class ModuloMayaColorAzulVideo extends AppCompatActivity {
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
+            startActivity(new Intent(ModuloMayaColorAzulVideo.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {
