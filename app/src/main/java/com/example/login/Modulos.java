@@ -67,8 +67,12 @@ public class Modulos extends AppCompatActivity{
 
         if (id == R.id.itModuloMaya) {
 
+            startActivity(new Intent(Modulos.this, ModuloMaya.class));
+
             return true;
         } else if (id == R.id.itModuloBolt) {
+
+            startActivity(new Intent(Modulos.this, ModuloBolt.class));
 
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
