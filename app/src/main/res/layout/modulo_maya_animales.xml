@@ -7,7 +7,7 @@
     android:background="@drawable/diseno_fondo_abstracto_1297_84">
 
     <ImageButton
-        android:id="@+id/siguiente4"
+        android:id="@+id/siguiente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:tint="#0E2CCD"

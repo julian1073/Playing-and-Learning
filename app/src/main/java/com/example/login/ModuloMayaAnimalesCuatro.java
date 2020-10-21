@@ -28,6 +28,13 @@ public class ModuloMayaAnimalesCuatro extends AppCompatActivity {
 
         botonPato = (ImageButton)findViewById(R.id.audioPato);
         pato = MediaPlayer.create(this, R.raw.pato);
+        botonPato.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pato.start();
+            }
+        });
+
         videoAnimales = findViewById(R.id.videoAnimales);
         String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.videoanimales;
         Uri uri = Uri.parse(videoPath);
