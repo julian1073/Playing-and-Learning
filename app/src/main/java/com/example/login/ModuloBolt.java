@@ -9,6 +9,12 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+public class ModuloBolt extends AppCompatActivity{
+    ImageButton vocales;
+    ImageButton numeros;
+    ImageButton colores;
+    ImageButton animales;
+    ImageButton signos;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ModuloBolt extends AppCompatActivity {
@@ -21,16 +27,41 @@ public class ModuloBolt extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modulo_bolt);
 
+        animales.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRec = new Intent(ModuloBolt.this, ModuloBoltAnimales.class);
+                ModuloBolt.this.startActivity(intentRec);
+            }
+        });
+
+        colores.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRec = new Intent(ModuloBolt.this, ModuloBoltColores.class);
+                ModuloBolt.this.startActivity(intentRec);
+            }
+        });
+
+        signos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRec = new Intent(ModuloBolt.this, ModuloBoltSignos.class);
+            }
+        });
+
         botonCuentos = (ImageButton) findViewById(R.id.botonCuentos);
 
         botonCuentos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentRec = new Intent(ModuloBolt.this, ModuloBoltCuentosUno.class);
+
                 ModuloBolt.this.startActivity(intentRec);
             }
         });
     }
+
     public boolean onCreateOptionsMenu(Menu menu){
 
         getMenuInflater().inflate(R.menu.activity_menu, menu);
@@ -75,3 +106,4 @@ public class ModuloBolt extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+

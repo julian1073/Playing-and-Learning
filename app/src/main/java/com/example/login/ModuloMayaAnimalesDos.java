@@ -60,10 +60,10 @@ public class ModuloMayaAnimalesDos extends AppCompatActivity {
         });
 
         next = (ImageButton) findViewById(R.id.next);
-
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intentRec = new Intent(ModuloMayaAnimalesDos.this, ModuloMayaAnimalesTres.class);
                 ModuloMayaAnimalesDos.this.startActivity(intentRec);
             }

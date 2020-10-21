@@ -63,7 +63,7 @@
         android:layout_width="361dp"
         android:layout_height="151dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Feliciades, has completado elmodulo de animales domesticos. Te incito ha que veas el siguiente video y mejores tus conocimientos."
+        android:text="Feliciades, has completado elmodulo de animales domesticos. Te invito ha que veas el siguiente video y mejores tus conocimientos."
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#101010"
         android:textSize="24sp"

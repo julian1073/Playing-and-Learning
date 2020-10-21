@@ -54,6 +54,7 @@ public class ModuloMayaVocalesContinuarDos extends AppCompatActivity {
         videoVocales.setMediaController(mediaController);
         mediaController.setAnchorView(videoVocales);
 
+
     }
 
     public boolean onCreateOptionsMenu(Menu menu){

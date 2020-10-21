@@ -49,13 +49,15 @@
         tools:text="ROJO" />
 
     <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="312dp"
-        android:layout_height="237dp"
+        android:id="@+id/imageView46"
+        android:layout_width="329dp"
+        android:layout_height="282dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.429"
-        app:srcCompat="@drawable/manzana" />
+        app:layout_constraintVertical_bias="0.475"
+        app:srcCompat="@drawable/manzanar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
