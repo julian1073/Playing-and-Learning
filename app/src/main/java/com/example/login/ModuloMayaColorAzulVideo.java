@@ -32,7 +32,7 @@ public class ModuloMayaColorAzulVideo extends AppCompatActivity {
         siguienteFin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloMayaColorAzulVideo.this, ModuloMayaColorAzul.class);
+                Intent intentRec = new Intent(ModuloMayaColorAzulVideo.this, ModuloMayaColorFin.class);
                 ModuloMayaColorAzulVideo.this.startActivity(intentRec);
             }
         });

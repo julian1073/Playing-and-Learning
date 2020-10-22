@@ -11,12 +11,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ModuloBolt extends AppCompatActivity{
-    ImageButton vocales;
-    ImageButton numeros;
+
     ImageButton colores;
     ImageButton animales;
     ImageButton signos;
     ImageButton botonCuentos;
+    ImageButton figuras;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
