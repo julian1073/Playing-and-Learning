@@ -102,7 +102,7 @@ public class Registro extends AppCompatActivity {
                     });
                 }
                 else{
-                    Toast.makeText(getApplicationContext(), "Error xd", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "El correo ya se encuentra registrado", Toast.LENGTH_SHORT).show();
                 }
             }
         });

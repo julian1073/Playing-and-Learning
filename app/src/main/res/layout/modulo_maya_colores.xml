@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/coloresimage" />
 
     <ImageButton
-        android:id="@+id/azul"
+        android:id="@+id/siguienteC"
         android:layout_width="116dp"
         android:layout_height="54dp"
         android:background="#FF5722"

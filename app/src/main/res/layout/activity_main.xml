@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
-        android:layout_height="317dp"
+        android:layout_height="271dp"
         app:srcCompat="@drawable/playing4" />
 
     <EditText
@@ -36,12 +36,11 @@
     <Button
         android:id="@+id/btnIniciar"
         android:layout_width="125dp"
-        android:layout_height="30dp"
+        android:layout_height="36dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:background="#9C27B0"
+        android:background="@color/colorPrimaryDark"
         android:gravity="center"
-
         android:text="Iniciar"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
@@ -58,10 +57,18 @@
     <TextView
         android:id="@+id/tvRecuperarClave"
         android:layout_width="wrap_content"
-        android:layout_height="37dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:text="Recuperar contraseña"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="15sp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnIniciarGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center" />
+
 </LinearLayout>

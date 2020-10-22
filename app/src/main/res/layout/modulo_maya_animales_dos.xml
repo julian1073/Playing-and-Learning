@@ -7,7 +7,7 @@
     android:background="@drawable/fondo_1t">
 
     <ImageButton
-        android:id="@+id/next3"
+        android:id="@+id/next"
         android:layout_width="58dp"
         android:layout_height="48dp"
         android:tint="#071D95"
@@ -63,8 +63,8 @@
 
     <ImageView
         android:id="@+id/imageView18"
-        android:layout_width="157dp"
-        android:layout_height="214dp"
+        android:layout_width="144dp"
+        android:layout_height="196dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.137"
@@ -75,8 +75,8 @@
 
     <ImageView
         android:id="@+id/imageView19"
-        android:layout_width="190dp"
-        android:layout_height="201dp"
+        android:layout_width="180dp"
+        android:layout_height="167dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.927"
@@ -86,8 +86,8 @@
 
     <ImageView
         android:id="@+id/imageView20"
-        android:layout_width="166dp"
-        android:layout_height="218dp"
+        android:layout_width="149dp"
+        android:layout_height="182dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.106"

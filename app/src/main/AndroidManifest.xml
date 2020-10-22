@@ -16,6 +16,8 @@
         <activity android:name=".Modulos"></activity>
         <activity android:name=".ModuloMaya"></activity>
         <activity android:name=".ModuloBolt"></activity>
+        <activity android:name=".ModuloSuperBolt"></activity>
+
 
         <activity android:name=".ModuloMayaVocales"></activity>
         <activity android:name=".ModuloMayaVocalesInicio"></activity>
@@ -30,24 +32,49 @@
         <activity android:name=".ModuloMayaNumerosCinco"></activity>
         <activity android:name=".ModuloMayaColores"></activity>
         <activity android:name=".ModuloMayaColorAmarillo"></activity>
-        <activity android:name=".ModuloMayaColorAmarilloVideo"></activity>
         <activity android:name=".ModuloMayaColorAzul"></activity>
         <activity android:name=".ModuloMayaColorAzulVideo"></activity>
         <activity android:name=".ModuloMayaColorRojo"></activity>
         <activity android:name=".ModuloMayaColorRojoVideo"></activity>
         <activity android:name=".ModuloMayaAnimales"></activity>
+        <activity android:name=".ModuloMayaAnimalesCuatro"></activity>
+        <activity android:name=".ModuloMayaAnimalesDos"></activity>
+        <activity android:name=".ModuloMayaAnimalesTres"></activity>
+        <activity android:name=".ModuloMayaAnimalesUno"></activity>
+
+        <activity android:name=".ModuloBoltAnimales"></activity>
+        <activity android:name=".ModuloBoltAnimalesCinco"></activity>
+        <activity android:name=".ModuloBoltAnimalesCuatro"></activity>
+        <activity android:name=".ModuloBoltAnimalesDos"></activity>
+        <activity android:name=".ModuloBoltAnimalesTres"></activity>
+        <activity android:name=".ModuloBoltAnimalesUno"></activity>
+        <activity android:name=".ModuloBoltColores"></activity>
+        <activity android:name=".ModuloBoltColorMorado"></activity>
+        <activity android:name=".ModuloBoltColorNaranja"></activity>
+        <activity android:name=".ModuloBoltColorVerde"></activity>
+        <activity android:name=".ModuloBoltColorVideo"></activity>
         <activity android:name=".ModuloBoltCuentosInicio"></activity>
         <activity android:name=".ModuloBoltCuentosUno"></activity>
         <activity android:name=".ModuloBoltCuentosDos"></activity>
         <activity android:name=".ModuloBoltCuentosTres"></activity>
         <activity android:name=".ModuloBoltCuentosCuatro"></activity>
         <activity android:name=".ModuloBoltCuentosQuinto"></activity>
+<<<<<<< HEAD
         <activity android:name=".ModuloMayaAnimalesUno"></activity>
         <activity android:name=".ModuloSuperBoltVocalesIngles"></activity>
         <activity android:name=".ModuloSuperBoltVocalesInglesCuatro"></activity>
         <activity android:name=".ModuloSuperBoltVocalesInglesDos"></activity>
         <activity android:name=".ModuloSuperBoltVocalesInglesNext"></activity>
         <activity android:name=".ModuloSuperBoltVocalesInglesTres"></activity>
+=======
+        <activity android:name=".ModuloBoltSignos"></activity>
+        <activity android:name=".ModuloBoltMenosPor"></activity>
+        <activity android:name=".ModuloBoltIgualMas"></activity>
+        <activity android:name=".ModuloBoltSignosVideo"></activity>
+        <activity android:name=".ModuloBoltFiguras"></activity>
+
+
+>>>>>>> master
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity">
             <intent-filter>

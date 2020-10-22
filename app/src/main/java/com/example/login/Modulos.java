@@ -18,6 +18,7 @@ public class Modulos extends AppCompatActivity{
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
     private ImageButton mMaya;
     private ImageButton mBolt;
+    private ImageButton mSuperBolt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class Modulos extends AppCompatActivity{
 
             mMaya = (ImageButton) findViewById(R.id.mMaya);
             mBolt = (ImageButton) findViewById(R.id.mBolt);
+            mSuperBolt = (ImageButton) findViewById(R.id.mSuperBolt);
 
             mMaya.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -45,14 +47,14 @@ public class Modulos extends AppCompatActivity{
                     Modulos.this.startActivity(intentReg);
                 }
             });
-        mMaya.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Para que un activity llame a otro
-                Intent intentReg = new Intent(Modulos.this, ModuloMaya.class);
-                Modulos.this.startActivity(intentReg);
-            }
-        });
+            mSuperBolt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //Para que un activity llame a otro
+                    Intent intentReg = new Intent(Modulos.this, ModuloSuperBolt.class);
+                    Modulos.this.startActivity(intentReg);
+                }
+            });
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
@@ -67,11 +69,17 @@ public class Modulos extends AppCompatActivity{
 
         if (id == R.id.itModuloMaya) {
 
+            startActivity(new Intent(Modulos.this, ModuloMaya.class));
+
             return true;
         } else if (id == R.id.itModuloBolt) {
 
+            startActivity(new Intent(Modulos.this, ModuloBolt.class));
+
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
+
+            startActivity(new Intent(Modulos.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {

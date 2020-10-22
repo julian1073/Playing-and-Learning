@@ -4,21 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/morado">
+    android:background="@drawable/amarillo">
 
     <ImageView
         android:id="@+id/imageView22"
-        android:layout_width="367dp"
-        android:layout_height="98dp"
+        android:layout_width="335dp"
+        android:layout_height="68dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085"
-        app:srcCompat="@drawable/categorias3" />
+        app:layout_constraintVertical_bias="0.129"
+        app:srcCompat="@drawable/catbolt" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/figuras"
         android:layout_width="165dp"
         android:layout_height="97dp"
         android:background="#00FFFFFF"
@@ -46,7 +48,7 @@
         app:srcCompat="@drawable/tablas" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/colores"
         android:layout_width="156dp"
         android:layout_height="119dp"
         android:background="#00FFFFFF"
@@ -60,7 +62,7 @@
         app:srcCompat="@drawable/coloresbolt" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/signos"
         android:layout_width="158dp"
         android:layout_height="106dp"
         android:background="#02FFFFFF"
@@ -88,7 +90,7 @@
         app:srcCompat="@drawable/cuentos" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/animales"
         android:layout_width="166dp"
         android:layout_height="117dp"
         android:background="#02FFFFFF"
