@@ -1,6 +1,7 @@
 package com.example.login;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,8 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ModuloMayaColorRojoVideo extends AppCompatActivity {
-
     VideoView videoRojo;
+    ImageButton siguienteAmarillo;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -24,7 +25,17 @@ public class ModuloMayaColorRojoVideo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modulo_maya_color_rojo_video);
 
-        videoRojo = findViewById(R.id.videoRojo);
+        videoRojo = findViewById(R.id.videoColorRojo);
+
+        siguienteAmarillo = (ImageButton) findViewById(R.id.siguienteAmarillo);
+
+        siguienteAmarillo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRec = new Intent(ModuloMayaColorRojoVideo.this, ModuloMayaColorAmarillo.class);
+                ModuloMayaColorRojoVideo.this.startActivity(intentRec);
+            }
+        });
 
         String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.cancionrojo;
         Uri uri = Uri.parse(videoPath);
@@ -33,7 +44,6 @@ public class ModuloMayaColorRojoVideo extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         videoRojo.setMediaController(mediaController);
         mediaController.setAnchorView(videoRojo);
-
     }
 
     public boolean onCreateOptionsMenu(Menu menu){

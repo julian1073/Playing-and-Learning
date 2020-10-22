@@ -1,35 +1,38 @@
 package com.example.login;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class
-ModuloMayaColores extends AppCompatActivity {
+public class ModuloMayaColorFin extends AppCompatActivity {
 
-    ImageButton siguiente;
+    VideoView videoColoresfin;
+
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.modulo_maya_colores);
+        setContentView(R.layout.modulo_maya_color_fin);
 
-        siguiente = (ImageButton) findViewById(R.id.siguienteC);
+        videoColoresfin = findViewById(R.id.videoColorFin);
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.amarillorojoazul;
+        Uri uri = Uri.parse(videoPath);
+        videoColoresfin.setVideoURI(uri);
 
-        siguiente.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloMayaColores.this, ModuloMayaColorRojo.class);
-                ModuloMayaColores.this.startActivity(intentRec);
-            }
-        });
+        MediaController mediaController = new MediaController(this);
+        videoColoresfin.setMediaController(mediaController);
+        mediaController.setAnchorView(videoColoresfin);
 
     }
     public boolean onCreateOptionsMenu(Menu menu){
@@ -44,28 +47,28 @@ ModuloMayaColores extends AppCompatActivity {
 
         if (id == R.id.itModuloMaya) {
 
-            startActivity(new Intent(ModuloMayaColores.this, ModuloMaya.class));
+            startActivity(new Intent(ModuloMayaColorFin.this, ModuloMaya.class));
 
             return true;
         } else if (id == R.id.itModuloBolt) {
 
-            startActivity(new Intent(ModuloMayaColores.this, ModuloBolt.class));
+            startActivity(new Intent(ModuloMayaColorFin.this, ModuloBolt.class));
 
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
-            startActivity(new Intent(ModuloMayaColores.this, ModuloSuperBolt.class));
+            startActivity(new Intent(ModuloMayaColorFin.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {
 
-            startActivity(new Intent(ModuloMayaColores.this, Modulos.class));
+            startActivity(new Intent(ModuloMayaColorFin.this, Modulos.class));
 
             return true;
         } else if (id == R.id.itCerrarSesion) {
 
             mAuth.signOut();
-            startActivity(new Intent(ModuloMayaColores.this, MainActivity.class));
+            startActivity(new Intent(ModuloMayaColorFin.this, MainActivity.class));
             finish();
 
             return true;

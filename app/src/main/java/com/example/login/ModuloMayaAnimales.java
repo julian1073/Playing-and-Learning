@@ -22,7 +22,7 @@ ModuloMayaAnimales extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modulo_maya_animales);
 
-        siguiente = (ImageButton) findViewById(R.id.siguiente4);
+        siguiente = (ImageButton) findViewById(R.id.siguiente);
 
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override

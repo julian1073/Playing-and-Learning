@@ -13,20 +13,29 @@ import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.login.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ModuloMayaColorAzulVideo extends AppCompatActivity {
-
     VideoView videoAzul;
-    ImageButton rojosiguiente;
+    ImageButton siguienteFin;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modulo_maya_color_azul_video);
-        videoAzul = findViewById(R.id.videoAzul);
+
+        videoAzul = findViewById(R.id.videoColorAzul);
+
+        siguienteFin = (ImageButton) findViewById(R.id.siguienteFin);
+
+        siguienteFin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRec = new Intent(ModuloMayaColorAzulVideo.this, ModuloMayaColorAzul.class);
+                ModuloMayaColorAzulVideo.this.startActivity(intentRec);
+            }
+        });
 
         String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.cancionazul;
         Uri uri = Uri.parse(videoPath);
@@ -35,16 +44,6 @@ public class ModuloMayaColorAzulVideo extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         videoAzul.setMediaController(mediaController);
         mediaController.setAnchorView(videoAzul);
-
-        rojosiguiente = (ImageButton) findViewById(R.id.rojosiguiente);
-
-        rojosiguiente.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloMayaColorAzulVideo.this, ModuloMayaColorRojo.class);
-                ModuloMayaColorAzulVideo.this.startActivity(intentRec);
-            }
-        });
     }
 
     public boolean onCreateOptionsMenu(Menu menu){

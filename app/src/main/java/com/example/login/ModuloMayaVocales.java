@@ -22,7 +22,7 @@ ModuloMayaVocales extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modulo_maya_vocales);
 
-        siguiente = (ImageButton) findViewById(R.id.azul);
+        siguiente = (ImageButton) findViewById(R.id.siguienteC);
 
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override

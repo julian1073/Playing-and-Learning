@@ -32,19 +32,40 @@
         <activity android:name=".ModuloMayaNumerosCinco"></activity>
         <activity android:name=".ModuloMayaColores"></activity>
         <activity android:name=".ModuloMayaColorAmarillo"></activity>
-        <activity android:name=".ModuloMayaColorAmarilloVideo"></activity>
         <activity android:name=".ModuloMayaColorAzul"></activity>
         <activity android:name=".ModuloMayaColorAzulVideo"></activity>
         <activity android:name=".ModuloMayaColorRojo"></activity>
         <activity android:name=".ModuloMayaColorRojoVideo"></activity>
         <activity android:name=".ModuloMayaAnimales"></activity>
+        <activity android:name=".ModuloMayaAnimalesCuatro"></activity>
+        <activity android:name=".ModuloMayaAnimalesDos"></activity>
+        <activity android:name=".ModuloMayaAnimalesTres"></activity>
+        <activity android:name=".ModuloMayaAnimalesUno"></activity>
+
+        <activity android:name=".ModuloBoltAnimales"></activity>
+        <activity android:name=".ModuloBoltAnimalesCinco"></activity>
+        <activity android:name=".ModuloBoltAnimalesCuatro"></activity>
+        <activity android:name=".ModuloBoltAnimalesDos"></activity>
+        <activity android:name=".ModuloBoltAnimalesTres"></activity>
+        <activity android:name=".ModuloBoltAnimalesUno"></activity>
+        <activity android:name=".ModuloBoltColores"></activity>
+        <activity android:name=".ModuloBoltColorMorado"></activity>
+        <activity android:name=".ModuloBoltColorNaranja"></activity>
+        <activity android:name=".ModuloBoltColorVerde"></activity>
+        <activity android:name=".ModuloBoltColorVideo"></activity>
         <activity android:name=".ModuloBoltCuentosInicio"></activity>
         <activity android:name=".ModuloBoltCuentosUno"></activity>
         <activity android:name=".ModuloBoltCuentosDos"></activity>
         <activity android:name=".ModuloBoltCuentosTres"></activity>
         <activity android:name=".ModuloBoltCuentosCuatro"></activity>
         <activity android:name=".ModuloBoltCuentosQuinto"></activity>
-        <activity android:name=".ModuloMayaAnimalesUno"></activity>
+        <activity android:name=".ModuloBoltSignos"></activity>
+        <activity android:name=".ModuloBoltMenosPor"></activity>
+        <activity android:name=".ModuloBoltIgualMas"></activity>
+        <activity android:name=".ModuloBoltSignosVideo"></activity>
+        <activity android:name=".ModuloBoltFiguras"></activity>
+
+
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity">
             <intent-filter>

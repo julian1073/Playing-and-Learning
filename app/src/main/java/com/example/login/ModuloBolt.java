@@ -6,26 +6,25 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-public class ModuloBolt extends AppCompatActivity{
-    ImageButton vocales;
-    ImageButton numeros;
-    ImageButton colores;
-    ImageButton animales;
-    ImageButton signos;
 import com.google.firebase.auth.FirebaseAuth;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ModuloBolt extends AppCompatActivity {
 
     ImageButton botonCuentos;
+    ImageButton colores;
+    ImageButton animales;
+    ImageButton signos;
+    ImageButton figuras;
+
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modulo_bolt);
+
+        animales = (ImageButton) findViewById(R.id.animales);
 
         animales.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +33,7 @@ public class ModuloBolt extends AppCompatActivity {
                 ModuloBolt.this.startActivity(intentRec);
             }
         });
-
+        colores = (ImageButton) findViewById(R.id.colores);
         colores.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,7 +41,7 @@ public class ModuloBolt extends AppCompatActivity {
                 ModuloBolt.this.startActivity(intentRec);
             }
         });
-
+        signos = (ImageButton) findViewById(R.id.signos);
         signos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,6 +55,16 @@ public class ModuloBolt extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intentRec = new Intent(ModuloBolt.this, ModuloBoltCuentosUno.class);
+
+                ModuloBolt.this.startActivity(intentRec);
+            }
+        });
+        figuras = (ImageButton) findViewById(R.id.figuras);
+
+        figuras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRec = new Intent(ModuloBolt.this, ModuloBoltFiguras.class);
 
                 ModuloBolt.this.startActivity(intentRec);
             }

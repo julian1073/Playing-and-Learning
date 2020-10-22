@@ -66,20 +66,21 @@
 
     <ImageView
         android:id="@+id/imageView29"
-        android:layout_width="182dp"
-        android:layout_height="205dp"
+        android:layout_width="150dp"
+        android:layout_height="153dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintVertical_bias="0.05"
         app:srcCompat="@drawable/mono" />
 
     <ImageView
         android:id="@+id/imageView30"
-        android:layout_width="214dp"
-        android:layout_height="201dp"
+        android:layout_width="175dp"
+        android:layout_height="151dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.918"
@@ -90,21 +91,21 @@
 
     <ImageView
         android:id="@+id/imageView31"
-        android:layout_width="190dp"
-        android:layout_height="227dp"
+        android:layout_width="135dp"
+        android:layout_height="158dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintHorizontal_bias="0.199"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.968"
+        app:layout_constraintVertical_bias="0.867"
         app:srcCompat="@drawable/gorila" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Mono"
         android:textColor="#0B0A0A"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -120,7 +121,7 @@
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Cocodrilo"
         android:textColor="#101010"
         android:textSize="30sp"
         android:textStyle="bold"

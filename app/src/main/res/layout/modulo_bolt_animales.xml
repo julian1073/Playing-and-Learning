@@ -33,16 +33,15 @@
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="371dp"
-        android:layout_height="201dp"
+        android:layout_width="311dp"
+        android:layout_height="155dp"
         android:text="Bienvenido al mundo salvaje, te invito a que te diviertas aprendiendo nombres de algunos animales salvajes "
         android:textColor="#0C0C0C"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63" />
+        app:layout_constraintVertical_bias="0.583" />
 </androidx.constraintlayout.widget.ConstraintLayout>

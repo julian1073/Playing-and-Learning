@@ -1,6 +1,7 @@
 package com.example.login;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,9 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ModuloMayaColorAmarilloVideo extends AppCompatActivity {
-
     VideoView videoAmarillo;
-    ImageButton siguienterojo;
+    ImageButton siguienteAzul;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -25,7 +25,17 @@ public class ModuloMayaColorAmarilloVideo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modulo_maya_color_amarillo_video);
 
-        videoAmarillo = findViewById(R.id.videoAzul);
+        videoAmarillo = findViewById(R.id.videoColorAmarillo);
+
+        siguienteAzul = (ImageButton) findViewById(R.id.siguienteAzul);
+
+        siguienteAzul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRec = new Intent(ModuloMayaColorAmarilloVideo.this, ModuloMayaColorAzul.class);
+                ModuloMayaColorAmarilloVideo.this.startActivity(intentRec);
+            }
+        });
 
         String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.cancionamarillo;
         Uri uri = Uri.parse(videoPath);
@@ -34,17 +44,8 @@ public class ModuloMayaColorAmarilloVideo extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         videoAmarillo.setMediaController(mediaController);
         mediaController.setAnchorView(videoAmarillo);
-
-        siguienterojo = (ImageButton) findViewById(R.id.rojosiguiente);
-
-        siguienterojo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloMayaColorAmarilloVideo.this, ModuloMayaColorAzul.class);
-                ModuloMayaColorAmarilloVideo.this.startActivity(intentRec);
-            }
-        });
     }
+
     public boolean onCreateOptionsMenu(Menu menu){
 
         getMenuInflater().inflate(R.menu.activity_menu, menu);

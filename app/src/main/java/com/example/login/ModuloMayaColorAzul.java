@@ -7,15 +7,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ModuloMayaColorAzul extends AppCompatActivity {
-    ImageButton azul;
-    MediaPlayer azulVoz;
-    ImageButton video2;
+
+    MediaPlayer azul;
+    ImageButton bAzul;
+    ImageButton siguienteAzulVideo;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -23,26 +24,27 @@ public class ModuloMayaColorAzul extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modulo_maya_color_azul);
 
-        azul = (ImageButton)findViewById(R.id.azul);
-        azulVoz = MediaPlayer.create(this, R.raw.azul);
+        bAzul = (ImageButton)findViewById(R.id.audioAzul);
+        azul = MediaPlayer.create(this, R.raw.azul);
 
-        azul.setOnClickListener(new View.OnClickListener() {
+        bAzul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                azulVoz.start();
+                azul.start();
             }
         });
-        video2 = (ImageButton) findViewById(R.id.video2);
 
-        video2.setOnClickListener(new View.OnClickListener() {
+        siguienteAzulVideo = (ImageButton) findViewById(R.id.siguienteVideoAzul);
+
+        siguienteAzulVideo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentRec = new Intent(ModuloMayaColorAzul.this, ModuloMayaColorAzulVideo.class);
                 ModuloMayaColorAzul.this.startActivity(intentRec);
             }
         });
-    }
 
+    }
     public boolean onCreateOptionsMenu(Menu menu){
 
         getMenuInflater().inflate(R.menu.activity_menu, menu);
@@ -87,4 +89,6 @@ public class ModuloMayaColorAzul extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

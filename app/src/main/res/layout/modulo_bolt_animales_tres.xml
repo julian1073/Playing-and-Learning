@@ -66,32 +66,32 @@
 
     <ImageView
         android:id="@+id/imageView32"
-        android:layout_width="152dp"
-        android:layout_height="254dp"
+        android:layout_width="110dp"
+        android:layout_height="177dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054"
+        app:layout_constraintVertical_bias="0.128"
         app:srcCompat="@drawable/cebra" />
 
     <ImageView
         android:id="@+id/imageView33"
-        android:layout_width="185dp"
-        android:layout_height="228dp"
+        android:layout_width="148dp"
+        android:layout_height="154dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintHorizontal_bias="0.866"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069"
+        app:layout_constraintVertical_bias="0.143"
         app:srcCompat="@drawable/tigre" />
 
     <ImageView
         android:id="@+id/imageView34"
-        android:layout_width="266dp"
-        android:layout_height="189dp"
+        android:layout_width="196dp"
+        android:layout_height="118dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.434"

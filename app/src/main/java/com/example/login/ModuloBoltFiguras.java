@@ -1,46 +1,32 @@
 package com.example.login;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class ModuloMayaColorRojo extends AppCompatActivity {
+public class ModuloBoltFiguras extends AppCompatActivity {
 
-    MediaPlayer rojo;
-    ImageButton bRojo;
-    ImageButton siguienteA;
+    ImageButton siguienteFigura;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.modulo_maya_color_rojo);
+        setContentView(R.layout.modulo_bolt_figuras);
 
-        bRojo = (ImageButton)findViewById(R.id.rojo);
-        rojo = MediaPlayer.create(this, R.raw.rojo);
+        siguienteFigura = (ImageButton) findViewById(R.id.siguienteFigura1);
 
-        bRojo.setOnClickListener(new View.OnClickListener() {
+        siguienteFigura.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rojo.start();
-            }
-        });
-
-        siguienteA = (ImageButton) findViewById(R.id.siguienteVideo);
-
-        siguienteA.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloMayaColorRojo.this, ModuloMayaColorRojoVideo.class);
-                ModuloMayaColorRojo.this.startActivity(intentRec);
+                Intent intentRec = new Intent(ModuloBoltFiguras.this, ModuloBoltFiguras.class);
+                ModuloBoltFiguras.this.startActivity(intentRec);
             }
         });
 
@@ -57,28 +43,29 @@ public class ModuloMayaColorRojo extends AppCompatActivity {
 
         if (id == R.id.itModuloMaya) {
 
-            startActivity(new Intent(ModuloMayaColorRojo.this, ModuloMaya.class));
+            startActivity(new Intent(ModuloBoltFiguras.this, ModuloMaya.class));
 
             return true;
         } else if (id == R.id.itModuloBolt) {
 
-            startActivity(new Intent(ModuloMayaColorRojo.this, ModuloBolt.class));
+            startActivity(new Intent(ModuloBoltFiguras.this, ModuloBolt.class));
 
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
-            startActivity(new Intent(ModuloMayaColorRojo.this, ModuloSuperBolt.class));
+            startActivity(new Intent(ModuloBoltFiguras.this, ModuloSuperBolt.class));
+
 
             return true;
         } else if (id == R.id.itInicio) {
 
-            startActivity(new Intent(ModuloMayaColorRojo.this, Modulos.class));
+            startActivity(new Intent(ModuloBoltFiguras.this, Modulos.class));
 
             return true;
         } else if (id == R.id.itCerrarSesion) {
 
             mAuth.signOut();
-            startActivity(new Intent(ModuloMayaColorRojo.this, MainActivity.class));
+            startActivity(new Intent(ModuloBoltFiguras.this, MainActivity.class));
             finish();
 
             return true;
@@ -90,5 +77,5 @@ public class ModuloMayaColorRojo extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
 }
+

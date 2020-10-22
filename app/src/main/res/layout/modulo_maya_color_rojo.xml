@@ -7,7 +7,7 @@
     android:background="@drawable/rojo">
 
     <ImageButton
-        android:id="@+id/video3"
+        android:id="@+id/siguienteVideo"
         android:layout_width="71dp"
         android:layout_height="34dp"
         android:background="#D35E5E"
