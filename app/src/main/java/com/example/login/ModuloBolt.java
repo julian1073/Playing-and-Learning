@@ -6,17 +6,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import com.google.firebase.auth.FirebaseAuth;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ModuloBolt extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseAuth;
 
-    ImageButton botonCuentos;
+public class ModuloBolt extends AppCompatActivity{
+    ImageButton vocales;
+    ImageButton numeros;
     ImageButton colores;
     ImageButton animales;
     ImageButton signos;
-    ImageButton figuras;
-
+    ImageButton botonCuentos;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -48,8 +48,6 @@ public class ModuloBolt extends AppCompatActivity {
                 Intent intentRec = new Intent(ModuloBolt.this, ModuloBoltSignos.class);
             }
         });
-
-        botonCuentos = (ImageButton) findViewById(R.id.botonCuentos);
 
         botonCuentos.setOnClickListener(new View.OnClickListener() {
             @Override
