@@ -41,14 +41,17 @@ public class ModuloBolt extends AppCompatActivity{
                 ModuloBolt.this.startActivity(intentRec);
             }
         });
+
         signos = (ImageButton) findViewById(R.id.signos);
         signos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentRec = new Intent(ModuloBolt.this, ModuloBoltSignos.class);
+                ModuloBolt.this.startActivity(intentRec);
+
             }
         });
-
+        botonCuentos = (ImageButton) findViewById(R.id.botonCuentos);
         botonCuentos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

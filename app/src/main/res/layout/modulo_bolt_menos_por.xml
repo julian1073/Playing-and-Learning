@@ -51,26 +51,28 @@
 
     <ImageView
         android:id="@+id/imageView44"
-        android:layout_width="275dp"
-        android:layout_height="200dp"
+        android:layout_width="170dp"
+        android:layout_height="107dp"
+        android:background="#03FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.143"
+        app:layout_constraintVertical_bias="0.172"
         app:srcCompat="@drawable/menos" />
 
     <ImageView
         android:id="@+id/imageView45"
-        android:layout_width="244dp"
-        android:layout_height="213dp"
+        android:layout_width="153dp"
+        android:layout_height="126dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.816"
+        app:layout_constraintVertical_bias="0.747"
         app:srcCompat="@drawable/por" />
 
     <TextView
@@ -92,7 +94,7 @@
         android:id="@+id/textView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Signnos Por"
+        android:text="Signos Por"
         android:textColor="#090909"
         android:textSize="36sp"
         android:textStyle="bold"

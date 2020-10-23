@@ -1,32 +1,46 @@
 package com.example.login;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class ModuloBoltFiguras extends AppCompatActivity {
+public class ModuloBoltFigurasTres extends AppCompatActivity {
 
-    ImageButton siguienteFigura;
+    MediaPlayer cuadrado;
+    ImageButton bCuadrado;
+    ImageButton siguientefigura;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.modulo_bolt_figuras);
+        setContentView(R.layout.modulo_bolt_figuras_tres);
 
-        siguienteFigura = (ImageButton) findViewById(R.id.siguienteFigura1);
+        bCuadrado = (ImageButton)findViewById(R.id.cuadrado);
+        cuadrado = MediaPlayer.create(this, R.raw.cuadrado);
 
-        siguienteFigura.setOnClickListener(new View.OnClickListener() {
+        bCuadrado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloBoltFiguras.this, ModuloBoltFigurasUno.class);
-                ModuloBoltFiguras.this.startActivity(intentRec);
+                cuadrado.start();
+            }
+        });
+
+        siguientefigura = (ImageButton) findViewById(R.id.siguenteFiguras3);
+
+        siguientefigura.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRec = new Intent(ModuloBoltFigurasTres.this, ModuloBoltFigurasCuatro.class);
+                ModuloBoltFigurasTres.this.startActivity(intentRec);
             }
         });
 
@@ -43,29 +57,28 @@ public class ModuloBoltFiguras extends AppCompatActivity {
 
         if (id == R.id.itModuloMaya) {
 
-            startActivity(new Intent(ModuloBoltFiguras.this, ModuloMaya.class));
+            startActivity(new Intent(ModuloBoltFigurasTres.this, ModuloMaya.class));
 
             return true;
         } else if (id == R.id.itModuloBolt) {
 
-            startActivity(new Intent(ModuloBoltFiguras.this, ModuloBolt.class));
+            startActivity(new Intent(ModuloBoltFigurasTres.this, ModuloBolt.class));
 
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
-            startActivity(new Intent(ModuloBoltFiguras.this, ModuloSuperBolt.class));
-
+            startActivity(new Intent(ModuloBoltFigurasTres.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {
 
-            startActivity(new Intent(ModuloBoltFiguras.this, Modulos.class));
+            startActivity(new Intent(ModuloBoltFigurasTres.this, Modulos.class));
 
             return true;
         } else if (id == R.id.itCerrarSesion) {
 
             mAuth.signOut();
-            startActivity(new Intent(ModuloBoltFiguras.this, MainActivity.class));
+            startActivity(new Intent(ModuloBoltFigurasTres.this, MainActivity.class));
             finish();
 
             return true;
@@ -77,5 +90,5 @@ public class ModuloBoltFiguras extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-}
 
+}

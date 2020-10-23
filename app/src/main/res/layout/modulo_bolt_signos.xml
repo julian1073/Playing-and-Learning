@@ -21,27 +21,29 @@
 
     <ImageView
         android:id="@+id/imageView41"
-        android:layout_width="299dp"
-        android:layout_height="284dp"
+        android:layout_width="235dp"
+        android:layout_height="221dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.098"
+        app:layout_constraintVertical_bias="0.175"
         app:srcCompat="@drawable/sig" />
 
     <TextView
         android:id="@+id/textView32"
-        android:layout_width="362dp"
-        android:layout_height="190dp"
+        android:layout_width="225dp"
+        android:layout_height="144dp"
         android:text="Bienvenido al mundo de las matematica, veremos y aprenderemos los principales signos matematicos"
         android:textColor="#050505"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672" />
+        app:layout_constraintVertical_bias="0.698" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -51,8 +51,9 @@
 
     <ImageView
         android:id="@+id/imageView42"
-        android:layout_width="275dp"
-        android:layout_height="185dp"
+        android:layout_width="186dp"
+        android:layout_height="156dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,8 +63,10 @@
 
     <ImageView
         android:id="@+id/imageView43"
-        android:layout_width="251dp"
-        android:layout_height="211dp"
+        android:layout_width="177dp"
+        android:layout_height="154dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +93,7 @@
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Digno Mas"
+        android:text="Signo Mas"
         android:textColor="#0B0B0B"
         android:textSize="36sp"
         android:textStyle="bold"
