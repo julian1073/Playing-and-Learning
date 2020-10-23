@@ -76,7 +76,7 @@
             android:gravity="bottom"
             android:text="Registrarse"
             android:padding="10dp"
-            android:background="@color/colorAccent"
+            android:background="@color/colorPrimaryDark"
             android:textSize="20sp"
             android:layout_gravity="center"
 

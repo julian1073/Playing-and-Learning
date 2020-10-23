@@ -34,7 +34,7 @@
         android:layout_marginBottom="40dp"
         android:background="#9A29B3"
         android:padding="10dp"
-        android:text="Ingrese su nombre de usuario y le enviaremos un correo para que pueda recuperar su contraseña"
+        android:text="Ingrese su email registrado y le enviaremos un correo para que pueda recuperar su contraseña"
         android:textColor="#FFFFFF"
 
         android:textSize="20sp"
@@ -49,12 +49,12 @@
         android:inputType="text" />
 
     <Button
-        android:id="@+id/bRecuperar"
+        android:id="@+id/btnRecuperar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="15dp"
         android:background="#9C27B0"
-        android:text="Enviar"
+        android:text="Restablecer Contraseña"
         />
 </LinearLayout>

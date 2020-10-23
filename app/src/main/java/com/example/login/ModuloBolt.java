@@ -17,6 +17,8 @@ public class ModuloBolt extends AppCompatActivity{
     ImageButton signos;
     ImageButton botonCuentos;
     ImageButton figuras;
+    ImageButton ibtnTablas;
+
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -51,6 +53,7 @@ public class ModuloBolt extends AppCompatActivity{
 
             }
         });
+
         botonCuentos = (ImageButton) findViewById(R.id.botonCuentos);
         botonCuentos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +70,17 @@ public class ModuloBolt extends AppCompatActivity{
             public void onClick(View v) {
                 Intent intentRec = new Intent(ModuloBolt.this, ModuloBoltFiguras.class);
 
+                ModuloBolt.this.startActivity(intentRec);
+            }
+        });
+
+        ibtnTablas = (ImageButton) findViewById(R.id.ibtnTablas);
+        ibtnTablas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentRec = new Intent(ModuloBolt.this, ModuloBoltTablas.class);
+                
                 ModuloBolt.this.startActivity(intentRec);
             }
         });

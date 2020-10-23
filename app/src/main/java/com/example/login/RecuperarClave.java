@@ -3,78 +3,75 @@ package com.example.login;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
+import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+
 
 public class RecuperarClave extends AppCompatActivity {
 
-    Button botonRecuperar;
-    TextView tvRecuperarClave;
-
+    private Button btnRecuperar;
+    private EditText tvRecuperarClave;
+    private String email = "";
+    private FirebaseAuth mAuth;
+    private ProgressDialog mDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_recuperar_clave);
+        setContentView(R.layout.activity_recuperar_clave);
 
-        //botonRecuperar = findViewById(R.id.bRecuperar);
-       // tvRecuperarClave = findViewById(R.id.tvRecuperarClave);
+        btnRecuperar = (Button) findViewById(R.id.btnRecuperar);
+        tvRecuperarClave = (EditText) findViewById(R.id.tvRecuperarClave);
+        mAuth = FirebaseAuth.getInstance();
+        mDialog = new ProgressDialog(this);
 
-        botonRecuperar.setOnClickListener(new View.OnClickListener() {
+        btnRecuperar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validate();
+
+                email = tvRecuperarClave.getText().toString();
+
+                if (!email.isEmpty()){
+
+                    mDialog.setMessage("Espere un momento...");
+                    mDialog.setCanceledOnTouchOutside(false);
+                    mDialog.show();
+                    resetPassword();
+                }
+                else{
+                    Toast.makeText(RecuperarClave.this, "Debe ingresar un correo", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
-
     }
 
-    public void validate(){
-        String email = tvRecuperarClave.getText().toString().trim();
+    private void resetPassword(){
 
-//        if(email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            tvRecuperarClave.setError("Correo invalido");
-            return;
-       // }
+        mAuth.setLanguageCode("es");
+        mAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
 
-     //   sendEmail(email);
-    }
+                if (task.isSuccessful()){
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
+                    Toast.makeText(RecuperarClave.this, "Se ha enviado un correo para restablecer la contraseña", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(RecuperarClave.this, "No se pudo envíar el correo", Toast.LENGTH_SHORT).show();
+                }
 
-        Intent intent = new Intent(RecuperarClave.this,MainActivity.class);
-        startActivity(intent);
-        finish();
-
-    }
-
-    public void sendEmail(String email){
-       // FireBaseAuth auth = FirebaseAuth.getIntance();
-        String direccionEmail = email;
-
-        //auth.sendPasswordResetEmail(direccionEmail)
-          //      .addOnCompleteListener(new OnCompleteListener<Void>(){
-            //        @Override
-              //      public void OnComplete(@NonNull Task<Void> task){
-                //        if(task.isSuccessful()){
-                    //        Toast.makeText(RecuperarClave.this, "Correo enviado", Toast.LENGTH_SHORT).show();
-                      //      Intent inten = new Intent(RecuperarClave.this, MainActivity.class);
-                  //          startActivity(intent);
-                        //    finish();
-                        //}else{
-                          //  Toast.makeText(RecuperarClave.this, "Correo invalido", Toast.LENGTH_SHORT).show();
-                   //     }
-                    //}
-
-             //   });
+                mDialog.dismiss();
+            }
+        });
     }
 }

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.login">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,71 +11,69 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ModuloBoltTablas"></activity>
+        <activity android:name=".RecuperarClave" />
+        <activity android:name=".Modulos" />
+        <activity android:name=".ModuloMaya" />
+        <activity android:name=".ModuloBolt" />
+        <activity android:name=".ModuloSuperBolt" />
+        <activity android:name=".ModuloMayaColorFin" />
+        <activity android:name=".ModuloMayaVocales" />
+        <activity android:name=".ModuloMayaVocalesInicio" />
+        <activity android:name=".ModuloMayaVocalesNext" />
+        <activity android:name=".ModuloMayaVocalesContinuar" />
+        <activity android:name=".ModuloMayaVocalesContinuarDos" />
+        <activity android:name=".ModuloMayaNumeros" />
+        <activity android:name=".ModuloMayaNumerosUno" />
+        <activity android:name=".ModuloMayaNumerosDos" />
+        <activity android:name=".ModuloMayaNumerosTres" />
+        <activity android:name=".ModuloMayaNumerosCuatro" />
+        <activity android:name=".ModuloMayaNumerosCinco" />
+        <activity android:name=".ModuloMayaColores" />
+        <activity android:name=".ModuloMayaColorAmarillo" />
+        <activity android:name=".ModuloMayaColorAmarilloVideo" />
+        <activity android:name=".ModuloMayaColorAzul" />
+        <activity android:name=".ModuloMayaColorAzulVideo" />
+        <activity android:name=".ModuloMayaColorRojo" />
+        <activity android:name=".ModuloMayaColorRojoVideo" />
+        <activity android:name=".ModuloMayaAnimales" />
+        <activity android:name=".ModuloMayaAnimalesCuatro" />
+        <activity android:name=".ModuloMayaAnimalesDos" />
+        <activity android:name=".ModuloMayaAnimalesTres" />
+        <activity android:name=".ModuloMayaAnimalesUno" />
+        <activity android:name=".ModuloBoltAnimales" />
+        <activity android:name=".ModuloBoltAnimalesCinco" />
+        <activity android:name=".ModuloBoltAnimalesCuatro" />
+        <activity android:name=".ModuloBoltAnimalesDos" />
+        <activity android:name=".ModuloBoltAnimalesTres" />
+        <activity android:name=".ModuloBoltAnimalesUno" />
+        <activity android:name=".ModuloBoltColores" />
+        <activity android:name=".ModuloBoltColorMorado" />
+        <activity android:name=".ModuloBoltColorNaranja" />
+        <activity android:name=".ModuloBoltColorVerde" />
+        <activity android:name=".ModuloBoltColorVideo" />
+        <activity android:name=".ModuloBoltCuentosInicio" />
+        <activity android:name=".ModuloBoltCuentosUno" />
+        <activity android:name=".ModuloBoltCuentosDos" />
+        <activity android:name=".ModuloBoltCuentosTres" />
+        <activity android:name=".ModuloBoltCuentosCuatro" />
+        <activity android:name=".ModuloBoltCuentosQuinto" />
+        <activity android:name=".ModuloSuperBoltVocalesIngles" />
+        <activity android:name=".ModuloSuperBoltVocalesInglesCuatro" />
+        <activity android:name=".ModuloSuperBoltVocalesInglesDos" />
+        <activity android:name=".ModuloSuperBoltVocalesInglesNext" />
+        <activity android:name=".ModuloSuperBoltVocalesInglesTres" />
+        <activity android:name=".ModuloBoltSignos" />
+        <activity android:name=".ModuloBoltMenosPor" />
+        <activity android:name=".ModuloBoltIgualMas" />
+        <activity android:name=".ModuloBoltSignosVideo" />
+        <activity android:name=".ModuloBoltFiguras" />
 
-        <activity android:name=".RecuperarClave"></activity>
-        <activity android:name=".Modulos"></activity>
-        <activity android:name=".ModuloMaya"></activity>
-        <activity android:name=".ModuloBolt"></activity>
-        <activity android:name=".ModuloSuperBolt"></activity>
-
-
-        <activity android:name=".ModuloMayaVocales"></activity>
-        <activity android:name=".ModuloMayaVocalesInicio"></activity>
-        <activity android:name=".ModuloMayaVocalesNext"></activity>
-        <activity android:name=".ModuloMayaVocalesContinuar"></activity>
-        <activity android:name=".ModuloMayaVocalesContinuarDos"></activity>
-        <activity android:name=".ModuloMayaNumeros"></activity>
-        <activity android:name=".ModuloMayaNumerosUno"></activity>
-        <activity android:name=".ModuloMayaNumerosDos"></activity>
-        <activity android:name=".ModuloMayaNumerosTres"></activity>
-        <activity android:name=".ModuloMayaNumerosCuatro"></activity>
-        <activity android:name=".ModuloMayaNumerosCinco"></activity>
-        <activity android:name=".ModuloMayaColores"></activity>
-        <activity android:name=".ModuloMayaColorAmarillo"></activity>
-        <activity android:name=".ModuloMayaColorAmarilloVideo"></activity>
-        <activity android:name=".ModuloMayaColorAzul"></activity>
-        <activity android:name=".ModuloMayaColorAzulVideo"></activity>
-        <activity android:name=".ModuloMayaColorRojo"></activity>
-        <activity android:name=".ModuloMayaColorRojoVideo"></activity>
-        <activity android:name=".ModuloMayaColorFin"></activity>
-        <activity android:name=".ModuloMayaAnimales"></activity>
-        <activity android:name=".ModuloMayaAnimalesCuatro"></activity>
-        <activity android:name=".ModuloMayaAnimalesDos"></activity>
-        <activity android:name=".ModuloMayaAnimalesTres"></activity>
-        <activity android:name=".ModuloMayaAnimalesUno"></activity>
-
-        <activity android:name=".ModuloBoltAnimales"></activity>
-        <activity android:name=".ModuloBoltAnimalesCinco"></activity>
-        <activity android:name=".ModuloBoltAnimalesCuatro"></activity>
-        <activity android:name=".ModuloBoltAnimalesDos"></activity>
-        <activity android:name=".ModuloBoltAnimalesTres"></activity>
-        <activity android:name=".ModuloBoltAnimalesUno"></activity>
-        <activity android:name=".ModuloBoltColores"></activity>
-        <activity android:name=".ModuloBoltColorMorado"></activity>
-        <activity android:name=".ModuloBoltColorNaranja"></activity>
-        <activity android:name=".ModuloBoltColorVerde"></activity>
-        <activity android:name=".ModuloBoltColorVideo"></activity>
-        <activity android:name=".ModuloBoltCuentosInicio"></activity>
-        <activity android:name=".ModuloBoltCuentosUno"></activity>
-        <activity android:name=".ModuloBoltCuentosDos"></activity>
-        <activity android:name=".ModuloBoltCuentosTres"></activity>
-        <activity android:name=".ModuloBoltCuentosCuatro"></activity>
-        <activity android:name=".ModuloBoltCuentosQuinto"></activity>
-        <activity android:name=".ModuloBoltSignos"></activity>
-        <activity android:name=".ModuloBoltMenosPor"></activity>
-        <activity android:name=".ModuloBoltIgualMas"></activity>
-        <activity android:name=".ModuloBoltSignosVideo"></activity>
-        <activity android:name=".ModuloBoltFiguras"></activity>
         <activity android:name=".ModuloBoltFigurasUno"></activity>
         <activity android:name=".ModuloBoltFigurasDos"></activity>
         <activity android:name=".ModuloBoltFigurasTres"></activity>
         <activity android:name=".ModuloBoltFigurasCuatro"></activity>
 
-        <activity android:name=".ModuloSuperBoltVocalesIngles"></activity>
-        <activity android:name=".ModuloSuperBoltVocalesInglesCuatro"></activity>
-        <activity android:name=".ModuloSuperBoltVocalesInglesDos"></activity>
-        <activity android:name=".ModuloSuperBoltVocalesInglesNext"></activity>
-        <activity android:name=".ModuloSuperBoltVocalesInglesTres"></activity>
 
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity">
@@ -85,7 +83,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

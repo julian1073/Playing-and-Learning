@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/figuras1" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/ibtnTablas"
         android:layout_width="168dp"
         android:layout_height="103dp"
         android:background="#05FFFFFF"
