@@ -16,7 +16,7 @@ public class ModuloBoltFigurasCuatro extends AppCompatActivity {
 
     MediaPlayer rectangulo;
     ImageButton bRectangulo;
-    ImageButton siguientefigura;
+    ImageButton siguienteC9;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -31,6 +31,16 @@ public class ModuloBoltFigurasCuatro extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 rectangulo.start();
+            }
+        });
+
+        siguienteC9 = (ImageButton) findViewById(R.id.siguienteC9);
+        siguienteC9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentRec = new Intent(ModuloBoltFigurasCuatro.this, ModuloBoltMedalla.class);
+                ModuloBoltFigurasCuatro.this.startActivity(intentRec);
             }
         });
 

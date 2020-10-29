@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class ModuloBoltSignosVideo extends AppCompatActivity {
     VideoView videoSignos;
+    ImageButton siguienteC10;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -31,6 +32,16 @@ public class ModuloBoltSignosVideo extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         videoSignos.setMediaController(mediaController);
         mediaController.setAnchorView(videoSignos);
+
+        siguienteC10 = (ImageButton) findViewById(R.id.siguienteC10);
+        siguienteC10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentRec = new Intent(ModuloBoltSignosVideo.this, ModuloBoltMedalla.class);
+                ModuloBoltSignosVideo.this.startActivity(intentRec);
+            }
+        });
 
     }
     public boolean onCreateOptionsMenu(Menu menu){

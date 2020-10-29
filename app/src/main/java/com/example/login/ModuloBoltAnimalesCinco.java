@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class ModuloBoltAnimalesCinco extends AppCompatActivity {
     VideoView videoAnimalesSalvajes;
+    ImageButton siguienteC6;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -32,7 +33,15 @@ public class ModuloBoltAnimalesCinco extends AppCompatActivity {
         videoAnimalesSalvajes.setMediaController(mediaController);
         mediaController.setAnchorView(videoAnimalesSalvajes);
 
+        siguienteC6 = (ImageButton) findViewById(R.id.siguienteC6);
+        siguienteC6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent intentRec = new Intent(ModuloBoltAnimalesCinco.this, ModuloBoltMedalla.class);
+                ModuloBoltAnimalesCinco.this.startActivity(intentRec);
+            }
+        });
 
     }
     public boolean onCreateOptionsMenu(Menu menu){

@@ -17,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class ModuloMayaNumerosCinco extends AppCompatActivity {
 
     VideoView videoNumerosCincuenta;
+    ImageButton siguienteC4;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -34,6 +35,16 @@ public class ModuloMayaNumerosCinco extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         videoNumerosCincuenta.setMediaController(mediaController);
         mediaController.setAnchorView(videoNumerosCincuenta);
+
+        siguienteC4 = (ImageButton) findViewById(R.id.siguienteC4);
+        siguienteC4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentRec = new Intent(ModuloMayaNumerosCinco.this, ModuloMayaMedalla.class);
+                ModuloMayaNumerosCinco.this.startActivity(intentRec);
+            }
+        });
 
     }
 

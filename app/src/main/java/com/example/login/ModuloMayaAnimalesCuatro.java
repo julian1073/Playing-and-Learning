@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class ModuloMayaAnimalesCuatro extends AppCompatActivity {
     MediaPlayer pato;
     ImageButton botonPato;
+    ImageButton siguienteC2;
     VideoView videoAnimales;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
@@ -43,6 +44,16 @@ public class ModuloMayaAnimalesCuatro extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         videoAnimales.setMediaController(mediaController);
         mediaController.setAnchorView(videoAnimales);
+
+        siguienteC2 = (ImageButton) findViewById(R.id.siguienteC2);
+        siguienteC2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentRec = new Intent(ModuloMayaAnimalesCuatro.this, ModuloMayaMedalla.class);
+                ModuloMayaAnimalesCuatro.this.startActivity(intentRec);
+            }
+        });
 
     }
 

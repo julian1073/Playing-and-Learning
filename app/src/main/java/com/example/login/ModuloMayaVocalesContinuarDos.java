@@ -19,6 +19,7 @@ public class ModuloMayaVocalesContinuarDos extends AppCompatActivity {
     MediaPlayer uvas;
     ImageButton botonUva;
     ImageButton botonPauseUva;
+    ImageButton siguienteC5;
     VideoView videoVocales;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
@@ -53,6 +54,16 @@ public class ModuloMayaVocalesContinuarDos extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         videoVocales.setMediaController(mediaController);
         mediaController.setAnchorView(videoVocales);
+
+        siguienteC5 = (ImageButton) findViewById(R.id.siguienteC5);
+        siguienteC5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentRec = new Intent(ModuloMayaVocalesContinuarDos.this, ModuloMayaMedalla.class);
+                ModuloMayaVocalesContinuarDos.this.startActivity(intentRec);
+            }
+        });
 
 
     }

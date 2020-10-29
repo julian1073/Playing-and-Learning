@@ -38,7 +38,7 @@
         android:layout_height="157dp"
         android:background="#00FFFFFF"
         android:lineSpacingExtra="14sp"
-        android:text="Aprende de una manera practica y divertida los distintos animales dometicos"
+        android:text="Aprende de una manera practica y divertida los distintos animales domesticos"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="24sp"

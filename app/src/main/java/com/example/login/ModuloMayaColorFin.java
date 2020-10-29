@@ -17,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class ModuloMayaColorFin extends AppCompatActivity {
 
     VideoView videoColoresfin;
+    ImageButton siguienteC3;
 
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
@@ -33,6 +34,16 @@ public class ModuloMayaColorFin extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         videoColoresfin.setMediaController(mediaController);
         mediaController.setAnchorView(videoColoresfin);
+
+        siguienteC3 = (ImageButton) findViewById(R.id.siguienteC3);
+        siguienteC3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentRec = new Intent(ModuloMayaColorFin.this, ModuloMayaMedalla.class);
+                ModuloMayaColorFin.this.startActivity(intentRec);
+            }
+        });
 
     }
     public boolean onCreateOptionsMenu(Menu menu){

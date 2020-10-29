@@ -25,8 +25,6 @@ public class Modulos extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modulos);
 
-        mMaya = (ImageButton) findViewById(R.id.mMaya);
-
             mMaya = (ImageButton) findViewById(R.id.mMaya);
             mBolt = (ImageButton) findViewById(R.id.mBolt);
             mSuperBolt = (ImageButton) findViewById(R.id.mSuperBolt);

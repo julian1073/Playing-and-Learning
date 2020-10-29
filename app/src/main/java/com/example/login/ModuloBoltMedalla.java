@@ -4,36 +4,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class ModuloSuperBolt extends AppCompatActivity {
+public class ModuloBoltMedalla extends AppCompatActivity {
 
-    ImageButton iVocales;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.modulo_super_bolt);
-
-        iVocales = (ImageButton) findViewById(R.id.iVocales);
-
-        iVocales.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloSuperBolt.this, ModuloSuperBoltVocalesIngles.class);
-                ModuloSuperBolt.this.startActivity(intentRec);
-            }
-        });
+        setContentView(R.layout.modulo_bolt_medalla);
     }
-
-
-    public boolean onCreateOptionsMenu(Menu menu){
+        public boolean onCreateOptionsMenu(Menu menu){
 
         getMenuInflater().inflate(R.menu.activity_menu, menu);
         return true;
@@ -45,28 +29,28 @@ public class ModuloSuperBolt extends AppCompatActivity {
 
         if (id == R.id.itModuloMaya) {
 
-            startActivity(new Intent(ModuloSuperBolt.this, ModuloMaya.class));
+            startActivity(new Intent(ModuloBoltMedalla.this, ModuloMaya.class));
 
             return true;
         } else if (id == R.id.itModuloBolt) {
 
-            startActivity(new Intent(ModuloSuperBolt.this, ModuloBolt.class));
+            startActivity(new Intent(ModuloBoltMedalla.this, ModuloBolt.class));
 
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
-            startActivity(new Intent(ModuloSuperBolt.this, ModuloSuperBolt.class));
+            startActivity(new Intent(ModuloBoltMedalla.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {
 
-            startActivity(new Intent(ModuloSuperBolt.this, Modulos.class));
+            startActivity(new Intent(ModuloBoltMedalla.this, Modulos.class));
 
             return true;
         } else if (id == R.id.itCerrarSesion) {
 
             mAuth.signOut();
-            startActivity(new Intent(ModuloSuperBolt.this, MainActivity.class));
+            startActivity(new Intent(ModuloBoltMedalla.this, MainActivity.class));
             finish();
 
             return true;
@@ -77,6 +61,5 @@ public class ModuloSuperBolt extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
-
-

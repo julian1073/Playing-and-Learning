@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class ModuloSuperBoltVocalesInglesCuatro extends AppCompatActivity {
     MediaPlayer umbrella;
     ImageButton botonUmbrella;
+    ImageButton siguienteC11;
     VideoView videoVocalesIngles;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
@@ -44,6 +45,16 @@ public class ModuloSuperBoltVocalesInglesCuatro extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         videoVocalesIngles.setMediaController(mediaController);
         mediaController.setAnchorView(videoVocalesIngles);
+
+        siguienteC11 = (ImageButton) findViewById(R.id.siguienteC11);
+        siguienteC11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentRec = new Intent(ModuloSuperBoltVocalesInglesCuatro.this, ModuloSuperBoltMedalla.class);
+                ModuloSuperBoltVocalesInglesCuatro.this.startActivity(intentRec);
+            }
+        });
 
     }
 

@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class ModuloBoltCuentosQuinto extends AppCompatActivity {
     VideoView videoCuentoQuinto;
+    ImageButton siguienteC8;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -33,6 +34,16 @@ public class ModuloBoltCuentosQuinto extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         videoCuentoQuinto.setMediaController(mediaController);
         mediaController.setAnchorView(videoCuentoQuinto);
+
+        siguienteC8 = (ImageButton) findViewById(R.id.siguienteC8);
+        siguienteC8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentRec = new Intent(ModuloBoltCuentosQuinto.this, ModuloBoltMedalla.class);
+                ModuloBoltCuentosQuinto.this.startActivity(intentRec);
+            }
+        });
     }
 
     public boolean onCreateOptionsMenu(Menu menu){

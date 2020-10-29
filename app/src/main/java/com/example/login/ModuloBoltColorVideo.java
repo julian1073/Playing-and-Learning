@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class ModuloBoltColorVideo extends AppCompatActivity {
     VideoView videoColoresSecundarios;
+    ImageButton siguienteC7;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -31,6 +32,17 @@ public class ModuloBoltColorVideo extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         videoColoresSecundarios.setMediaController(mediaController);
         mediaController.setAnchorView(videoColoresSecundarios);
+
+        siguienteC7 = (ImageButton) findViewById(R.id.siguienteC7);
+        siguienteC7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentRec = new Intent(ModuloBoltColorVideo.this, ModuloBoltMedalla.class);
+                ModuloBoltColorVideo.this.startActivity(intentRec);
+            }
+        });
+
 
     }
     public boolean onCreateOptionsMenu(Menu menu){
