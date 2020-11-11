@@ -7,7 +7,7 @@
     android:background="@drawable/fondo_signo">
 
     <ImageButton
-        android:id="@+id/siguiente"
+        android:id="@+id/siguiente4"
         android:layout_width="85dp"
         android:layout_height="54dp"
         android:tint="#071D95"

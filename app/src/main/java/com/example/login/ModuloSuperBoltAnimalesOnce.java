@@ -1,37 +1,42 @@
 package com.example.login;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class
-ModuloMayaAnimales extends AppCompatActivity {
+public class ModuloSuperBoltAnimalesOnce extends AppCompatActivity {
+    ImageButton siguienteMedalla;
 
-    ImageButton siguiente;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.modulo_maya_animales);
+        setContentView(R.layout.modulo_super_bolt_animales_once);
 
-        siguiente = (ImageButton) findViewById(R.id.siguiente4);
-
-        siguiente.setOnClickListener(new View.OnClickListener() {
+        siguienteMedalla = (ImageButton) findViewById(R.id.siguienteMedalla);
+        siguienteMedalla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloMayaAnimales.this, ModuloMayaAnimalesUno.class);
-                ModuloMayaAnimales.this.startActivity(intentRec);
+
+                Intent intentRec = new Intent(ModuloSuperBoltAnimalesOnce.this, ModuloSuperBoltMedalla.class);
+                ModuloSuperBoltAnimalesOnce.this.startActivity(intentRec);
             }
         });
+
     }
+
     public boolean onCreateOptionsMenu(Menu menu){
 
         getMenuInflater().inflate(R.menu.activity_menu, menu);
@@ -44,28 +49,28 @@ ModuloMayaAnimales extends AppCompatActivity {
 
         if (id == R.id.itModuloMaya) {
 
-            startActivity(new Intent(ModuloMayaAnimales.this, ModuloMaya.class));
+            startActivity(new Intent(ModuloSuperBoltAnimalesOnce.this, ModuloMaya.class));
 
             return true;
         } else if (id == R.id.itModuloBolt) {
 
-            startActivity(new Intent(ModuloMayaAnimales.this, ModuloBolt.class));
+            startActivity(new Intent(ModuloSuperBoltAnimalesOnce.this, ModuloBolt.class));
 
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
-            startActivity(new Intent(ModuloMayaAnimales.this, ModuloSuperBolt.class));
+            startActivity(new Intent(ModuloSuperBoltAnimalesOnce.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {
 
-            startActivity(new Intent(ModuloMayaAnimales.this, Modulos.class));
+            startActivity(new Intent(ModuloSuperBoltAnimalesOnce.this, Modulos.class));
 
             return true;
         } else if (id == R.id.itCerrarSesion) {
 
             mAuth.signOut();
-            startActivity(new Intent(ModuloMayaAnimales.this, MainActivity.class));
+            startActivity(new Intent(ModuloSuperBoltAnimalesOnce.this, MainActivity.class));
             finish();
 
             return true;

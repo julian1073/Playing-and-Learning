@@ -14,12 +14,23 @@ import com.google.firebase.auth.FirebaseAuth;
 public class ModuloSuperBolt extends AppCompatActivity {
 
     ImageButton iVocales;
+    ImageButton animalesIngles;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modulo_super_bolt);
+
+        animalesIngles = (ImageButton) findViewById(R.id.animalesIngles);
+
+        animalesIngles.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRec = new Intent(ModuloSuperBolt.this, ModuloSuperBoltAnimales.class);
+                ModuloSuperBolt.this.startActivity(intentRec);
+            }
+        });
 
         iVocales = (ImageButton) findViewById(R.id.iVocales);
 

@@ -21,7 +21,7 @@ ModuloBoltSignos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modulo_bolt_signos);
 
-        siguiente = (ImageButton) findViewById(R.id.siguiente);
+        siguiente = (ImageButton) findViewById(R.id.siguiente4);
 
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
