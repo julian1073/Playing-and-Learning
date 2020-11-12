@@ -2,7 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+<<<<<<< Updated upstream
     android:id="@+id/rojovideo1"
+=======
+    android:id="@+id/videorojo"
+>>>>>>> Stashed changes
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/rojo">
@@ -21,7 +25,11 @@
         app:srcCompat="@android:drawable/ic_media_ff" />
 
     <VideoView
+<<<<<<< Updated upstream
         android:id="@+id/videoColorRojo"
+=======
+        android:id="@+id/videorojo"
+>>>>>>> Stashed changes
         android:layout_width="344dp"
         android:layout_height="284dp"
         app:layout_constraintBottom_toBottomOf="parent"
