@@ -1,6 +1,7 @@
 package com.example.login;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,47 +12,51 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class ModuloSuperBolt extends AppCompatActivity {
-
-    ImageButton iVocales;
-    ImageButton animalesIngles;
+public class ModuloSuperBoltAnimalesCinco extends AppCompatActivity {
+    MediaPlayer duck;
+    MediaPlayer lion;
+    ImageButton botonDuck;
+    ImageButton botonLion;
+    ImageButton siguiente;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.modulo_super_bolt);
+        setContentView(R.layout.modulo_super_bolt_animales_cinco);
 
-        animalesIngles = (ImageButton) findViewById(R.id.animalesIngles);
+        botonDuck = (ImageButton)findViewById(R.id.botonDuck);
+        duck = MediaPlayer.create(this, R.raw.duck);
 
-        animalesIngles.setOnClickListener(new View.OnClickListener() {
+        botonDuck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloSuperBolt.this, ModuloSuperBoltAnimales.class);
-                ModuloSuperBolt.this.startActivity(intentRec);
+                duck.start();
             }
         });
 
-        iVocales = (ImageButton) findViewById(R.id.iVocales);
 
-        iVocales.setOnClickListener(new View.OnClickListener() {
+        botonLion = (ImageButton)findViewById(R.id.botonLion);
+        lion = MediaPlayer.create(this, R.raw.lion);
+
+        botonLion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloSuperBolt.this, ModuloSuperBoltVocalesIngles.class);
-                ModuloSuperBolt.this.startActivity(intentRec);
+                lion.start();
             }
         });
-        iColores = (ImageButton) findViewById(R.id.colors);
 
-        iColores.setOnClickListener(new View.OnClickListener() {
+        siguiente = (ImageButton) findViewById(R.id.siguiente);
+
+        siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloSuperBolt.this, ModuloSuperBoltColoresIngles.class);
-                ModuloSuperBolt.this.startActivity(intentRec);
+                Intent intentRec = new Intent(ModuloSuperBoltAnimalesCinco.this, ModuloSuperBoltAnimalesSeis.class);
+                ModuloSuperBoltAnimalesCinco.this.startActivity(intentRec);
             }
         });
+
     }
-
 
     public boolean onCreateOptionsMenu(Menu menu){
 
@@ -65,28 +70,28 @@ public class ModuloSuperBolt extends AppCompatActivity {
 
         if (id == R.id.itModuloMaya) {
 
-            startActivity(new Intent(ModuloSuperBolt.this, ModuloMaya.class));
+            startActivity(new Intent(ModuloSuperBoltAnimalesCinco.this, ModuloMaya.class));
 
             return true;
         } else if (id == R.id.itModuloBolt) {
 
-            startActivity(new Intent(ModuloSuperBolt.this, ModuloBolt.class));
+            startActivity(new Intent(ModuloSuperBoltAnimalesCinco.this, ModuloBolt.class));
 
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
-            startActivity(new Intent(ModuloSuperBolt.this, ModuloSuperBolt.class));
+            startActivity(new Intent(ModuloSuperBoltAnimalesCinco.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {
 
-            startActivity(new Intent(ModuloSuperBolt.this, Modulos.class));
+            startActivity(new Intent(ModuloSuperBoltAnimalesCinco.this, Modulos.class));
 
             return true;
         } else if (id == R.id.itCerrarSesion) {
 
             mAuth.signOut();
-            startActivity(new Intent(ModuloSuperBolt.this, MainActivity.class));
+            startActivity(new Intent(ModuloSuperBoltAnimalesCinco.this, MainActivity.class));
             finish();
 
             return true;
@@ -98,5 +103,3 @@ public class ModuloSuperBolt extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-
-

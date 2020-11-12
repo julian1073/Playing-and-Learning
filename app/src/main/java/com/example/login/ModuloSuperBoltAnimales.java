@@ -8,29 +8,30 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.firebase.auth.FirebaseAuth;
 
 public class
-ModuloMayaAnimales extends AppCompatActivity {
+ModuloSuperBoltAnimales extends AppCompatActivity {
 
     ImageButton siguiente;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.modulo_maya_animales);
+        setContentView(R.layout.modulo_super_bolt_animales);
 
         siguiente = (ImageButton) findViewById(R.id.siguiente4);
 
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloMayaAnimales.this, ModuloMayaAnimalesUno.class);
-                ModuloMayaAnimales.this.startActivity(intentRec);
+                Intent intentRec = new Intent(ModuloSuperBoltAnimales.this, ModuloSuperBoltAnimalesUno.class);
+                ModuloSuperBoltAnimales.this.startActivity(intentRec);
             }
         });
+
     }
     public boolean onCreateOptionsMenu(Menu menu){
 
@@ -44,28 +45,28 @@ ModuloMayaAnimales extends AppCompatActivity {
 
         if (id == R.id.itModuloMaya) {
 
-            startActivity(new Intent(ModuloMayaAnimales.this, ModuloMaya.class));
+            startActivity(new Intent(ModuloSuperBoltAnimales.this, ModuloMaya.class));
 
             return true;
         } else if (id == R.id.itModuloBolt) {
 
-            startActivity(new Intent(ModuloMayaAnimales.this, ModuloBolt.class));
+            startActivity(new Intent(ModuloSuperBoltAnimales.this, ModuloBolt.class));
 
             return true;
         } else if (id == R.id.itModuloSuperBolt) {
 
-            startActivity(new Intent(ModuloMayaAnimales.this, ModuloSuperBolt.class));
+            startActivity(new Intent(ModuloSuperBoltAnimales.this, ModuloSuperBolt.class));
 
             return true;
         } else if (id == R.id.itInicio) {
 
-            startActivity(new Intent(ModuloMayaAnimales.this, Modulos.class));
+            startActivity(new Intent(ModuloSuperBoltAnimales.this, Modulos.class));
 
             return true;
         } else if (id == R.id.itCerrarSesion) {
 
             mAuth.signOut();
-            startActivity(new Intent(ModuloMayaAnimales.this, MainActivity.class));
+            startActivity(new Intent(ModuloSuperBoltAnimales.this, MainActivity.class));
             finish();
 
             return true;
@@ -76,4 +77,5 @@ ModuloMayaAnimales extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

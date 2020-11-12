@@ -62,7 +62,7 @@
         app:srcCompat="@drawable/ingles3" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/animalesIngles"
         android:layout_width="169dp"
         android:layout_height="91dp"
         android:background="#00FFFFFF"
