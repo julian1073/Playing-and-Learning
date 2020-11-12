@@ -48,7 +48,7 @@
         app:srcCompat="@drawable/ingles2" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/colors"
         android:layout_width="169dp"
         android:layout_height="96dp"
         android:background="#00FFFFFF"
