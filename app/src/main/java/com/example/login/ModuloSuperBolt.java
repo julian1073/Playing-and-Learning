@@ -17,6 +17,7 @@ public class ModuloSuperBolt extends AppCompatActivity {
     ImageButton animalesIngles;
     ImageButton iColores;
 
+    ImageButton numerosIngles;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -25,6 +26,8 @@ public class ModuloSuperBolt extends AppCompatActivity {
         setContentView(R.layout.modulo_super_bolt);
 
         animalesIngles = (ImageButton) findViewById(R.id.iAnimales);
+        animalesIngles = (ImageButton) findViewById(R.id.animalesIngles);
+        numerosIngles = (ImageButton) findViewById(R.id.imageButton7);
 
         animalesIngles.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +52,14 @@ public class ModuloSuperBolt extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intentRec = new Intent(ModuloSuperBolt.this, ModuloSuperBoltColoresIngles.class);
+                ModuloSuperBolt.this.startActivity(intentRec);
+            }
+        });
+
+        numerosIngles.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRec = new Intent(ModuloSuperBolt.this, ModuloSuperBoltNumeros.class);
                 ModuloSuperBolt.this.startActivity(intentRec);
             }
         });

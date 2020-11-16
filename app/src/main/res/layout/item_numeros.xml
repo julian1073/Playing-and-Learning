@@ -17,49 +17,73 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Números en Inglés: Uno - One"
+                android:textColor="#262626"
+                android:textSize="25sp"
+                />
 
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:src="@drawable/uno" />
+                android:layout_height="200dp"
+                android:src="@drawable/espuno"
+                android:layout_below="@id/title"
+                />
+            <Button
+                android:id="@+id/btnReproducirEsp"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/title"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/reproducir"
+                />
+
+            <Button
+                android:id="@+id/btnStopEsp"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/title"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/detener"
+                />
 
             <TextView
-                android:id="@+id/title"
+                android:id="@+id/titleDos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/image"
+                android:text="English"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="15dp"
-                android:text="Tabla del 1"
                 android:textColor="#262626"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/desc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/title"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginRight="16dp"
-                android:drawablePadding="10dp"
-                android:ellipsize="end"
-                android:maxLines="3"
-                android:text="A continuación la tabla del Uno" />
-
+                android:textSize="20sp"
+                />
             <ImageView
                 android:id="@+id/imageDos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/desc"
+                android:layout_below="@+id/titleDos"
                 android:layout_marginTop="10dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/tablauno" />
+                android:src="@drawable/inglesuno"
+                />
 
             <Button
-                android:id="@+id/btnReproducir"
+                android:id="@+id/btnReproducirIng"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
                 android:layout_alignBottom="@id/imageDos"
@@ -69,8 +93,9 @@
                 android:layout_marginBottom="60dp"
                 android:background="@drawable/reproducir"
                 />
+
             <Button
-                android:id="@+id/btnStop"
+                android:id="@+id/btnStopIng"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
                 android:layout_alignBottom="@id/imageDos"
