@@ -17,20 +17,14 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class ModuloMayaColorRojoVideo extends AppCompatActivity {
     VideoView videoRojo;
-<<<<<<< Updated upstream
     ImageButton siguienteAmarillo;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
-=======
-    ImageButton siguientefinal;
-
->>>>>>> Stashed changes
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.modulo_maya_color_amarillo_video);
+        setContentView(R.layout.modulo_maya_color_rojo_video);
 
-<<<<<<< Updated upstream
         videoRojo = findViewById(R.id.videoColorRojo);
 
         siguienteAmarillo = (ImageButton) findViewById(R.id.siguienteAmarillo);
@@ -42,9 +36,6 @@ public class ModuloMayaColorRojoVideo extends AppCompatActivity {
                 ModuloMayaColorRojoVideo.this.startActivity(intentRec);
             }
         });
-=======
-        videoRojo = findViewById(R.id.videorojo);
->>>>>>> Stashed changes
 
         String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.cancionrojo;
         Uri uri = Uri.parse(videoPath);
@@ -97,18 +88,6 @@ public class ModuloMayaColorRojoVideo extends AppCompatActivity {
             return true;
         }
 
-<<<<<<< Updated upstream
         return super.onOptionsItemSelected(item);
-=======
-        siguientefinal = (ImageButton) findViewById(R.id.rojosiguiente);
-
-        siguientefinal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentRec = new Intent(ModuloMayaColorRojoVideo.this, ModuloMayaColorAzul.class);
-                ModuloMayaColorRojoVideo.this.startActivity(intentRec);
-            }
-        });
->>>>>>> Stashed changes
     }
 }

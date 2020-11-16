@@ -10,10 +10,7 @@ import android.widget.ImageButton;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-<<<<<<< Updated upstream
 import com.google.firebase.auth.FirebaseAuth;
-=======
->>>>>>> Stashed changes
 
 public class ModuloMayaColorAmarillo extends AppCompatActivity {
 
@@ -36,10 +33,6 @@ public class ModuloMayaColorAmarillo extends AppCompatActivity {
                 amarillo.start();
             }
         });
-<<<<<<< Updated upstream
-=======
-        video = (ImageButton) findViewById(R.id.videorojo);
->>>>>>> Stashed changes
 
         siguienteV = (ImageButton) findViewById(R.id.siguienteVideoAmarillo);
 
