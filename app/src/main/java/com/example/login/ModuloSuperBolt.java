@@ -26,7 +26,6 @@ public class ModuloSuperBolt extends AppCompatActivity {
         setContentView(R.layout.modulo_super_bolt);
 
         animalesIngles = (ImageButton) findViewById(R.id.iAnimales);
-        animalesIngles = (ImageButton) findViewById(R.id.animalesIngles);
         numerosIngles = (ImageButton) findViewById(R.id.imageButton7);
 
         animalesIngles.setOnClickListener(new View.OnClickListener() {
